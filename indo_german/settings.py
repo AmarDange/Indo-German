@@ -36,7 +36,7 @@ SECRET_KEY = 'django-insecure-)9-eb4e&#b(r34+)r=74o@nwcdi9t-vre_7c_(6np@bf0v!uh%
 DEBUG = True
 
 ALLOWED_HOSTS = []
-ALLOWED_HOSTS = ['8000-amardange-indogerman-dpwl66fp0jh.ws-eu99.gitpod.io']
+ALLOWED_HOSTS = ['8000-amardange-indogerman-dpwl66fp0jh.ws-eu100.gitpod.io']
 
 
 # Application definition
