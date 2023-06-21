@@ -80,7 +80,7 @@ DEBUG = True
 # DEBUG = 'DEV' in os.environ
 
 
-ALLOWED_HOSTS = ['localhost', 'indo-german.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', 'indo-german-932e214b60bd.herokuapp.com']
 # ALLOWED_HOSTS = ['8000-amardange-indogerman-dpwl66fp0jh.ws-eu100.gitpod.io']
 
 if 'CLIENT_ORIGIN' in os.environ:
