@@ -82,7 +82,8 @@ DEBUG = True
 
 
 ALLOWED_HOSTS = ['localhost', 'indo-german-932e214b60bd.herokuapp.com']
-ALLOWED_HOSTS = ['8000-amardange-indogerman-dpwl66fp0jh.ws-eu100.gitpod.io']
+ALLOWED_HOSTS = ['indo-german-932e214b60bd.herokuapp.com']
+
 
 if 'CLIENT_ORIGIN' in os.environ:
     CORS_ALLOWED_ORIGINS = [
@@ -90,15 +91,11 @@ if 'CLIENT_ORIGIN' in os.environ:
     ]
 
 if 'CLIENT_ORIGIN_DEV' in os.environ:
-    extracted_url = re.match(r'^.+-', os.environ.get('CLIENT_ORIGIN_DEV', ''), re.IGNORECASE
-    ).group(0)
+    extracted_url = re.match(r'^.+-', os.environ.get('CLIENT_ORIGIN_DEV', ''), re.IGNORECASE).group(0)
     CORS_ALLOWED_ORIGIN_REGEXES = [
         rf"{extracted_url}(eu|us)\d+\w\.gitpod\.io$",
     ]
 CORS_ALLOW_CREDENTIALS = True
-
-
-
 # Application definition
 
 INSTALLED_APPS = [
