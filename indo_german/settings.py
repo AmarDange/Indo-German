@@ -12,8 +12,9 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+import re
 import dj_database_url
-# import re
+
 
 if os.path.exists('env.py'):
     import env
@@ -23,7 +24,6 @@ CLOUDINARY_STORAGE = {
 }
 MEDIA_URL = '/media/'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -44,17 +44,17 @@ if 'DEV' not in os.environ:
         'rest_framework.renderers.JSONRenderer',
     ]
 
-if 'DEV' in os.environ:
-     DATABASES = {
-         'default': {
-             'ENGINE': 'django.db.backends.sqlite3',
-             'NAME': BASE_DIR / 'db.sqlite3',
-         }
-     }
-else:
-     DATABASES = {
-         'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
-     }
+# if 'DEV' in os.environ:
+#      DATABASES = {
+#          'default': {
+#              'ENGINE': 'django.db.backends.sqlite3',
+#              'NAME': BASE_DIR / 'db.sqlite3',
+#          }
+#      }
+# else:
+#      DATABASES = {
+#          'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+#      }
     #  print('connected')
 
 REST_USE_JWT = True
@@ -74,15 +74,21 @@ REST_AUTH_SERIALIZERS = {
 
 # SECURITY WARNING: keep the secret key used in production secret!
 # SECRET_KEY = 'django-insecure-)9-eb4e&#b(r34+)r=74o@nwcdi9t-vre_7c_(6np@bf0v!uh%'
-SECRET_KEY = os.getenv('SECRET_KEY')
+# SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-# DEBUG = 'DEV' in os.environ
+# DEBUG = True
+DEBUG = 'DEV' in os.environ
 
 
 ALLOWED_HOSTS = ['localhost', 'indo-german-932e214b60bd.herokuapp.com']
 ALLOWED_HOSTS = ['8000-amardange-indogerman-dpwl66fp0jh.ws-eu100.gitpod.io']
+
+# ALLOWED_HOSTS = [
+#     os.environ.get('ALLOWED_HOST'),
+#     'localhost',
+# ]
 
 
 if 'CLIENT_ORIGIN' in os.environ:
@@ -96,6 +102,7 @@ if 'CLIENT_ORIGIN_DEV' in os.environ:
         rf"{extracted_url}(eu|us)\d+\w\.gitpod\.io$",
     ]
 CORS_ALLOW_CREDENTIALS = True
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -168,6 +175,15 @@ WSGI_APPLICATION = 'indo_german.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+
+DATABASES = {
+    'default': ({
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    } if 'DEV' in os.environ else dj_database_url.parse(
+        os.environ.get('DATABASE_URL')
+    ))
+}
 
 
 # Password validation
