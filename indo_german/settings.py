@@ -82,7 +82,6 @@ DEBUG = True
 
 
 ALLOWED_HOSTS = ['localhost', 'indo-german-932e214b60bd.herokuapp.com']
-ALLOWED_HOSTS = ['indo-german-932e214b60bd.herokuapp.com/']
 ALLOWED_HOSTS = ['8000-amardange-indogerman-dpwl66fp0jh.ws-eu100.gitpod.io']
 
 
