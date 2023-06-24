@@ -82,7 +82,7 @@ DEBUG = True
 
 
 ALLOWED_HOSTS = ['localhost', 'indo-german-932e214b60bd.herokuapp.com']
-ALLOWED_HOSTS = ['indo-german-932e214b60bd.herokuapp.com']
+ALLOWED_HOSTS = ['indo-german-932e214b60bd.herokuapp.com/']
 
 
 if 'CLIENT_ORIGIN' in os.environ:
