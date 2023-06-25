@@ -103,6 +103,7 @@ if 'CLIENT_ORIGIN_DEV' in os.environ:
     ]
 CORS_ALLOW_CREDENTIALS = True
 
+
 # Application definition
 
 INSTALLED_APPS = [
