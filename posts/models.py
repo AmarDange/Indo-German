@@ -7,6 +7,22 @@ class Post(models.Model):
     Post model, related to 'owner', i.e. a User instance.
     Default image set so that we can always reference image.url.
     """
+
+
+    class Category(models.TextChoices):
+        '''
+        A class for the age_group key
+        Contains different age ranges to choose from
+        '''
+        BOOKS = 'Books',
+        MUSIC = 'Music',
+        ART = 'Art',
+        PERSON = 'Person',
+        PLACE = 'Place',
+        MOVIES = 'Movies',
+        EVENT = 'Event'
+
+
     image_filter_choices = [
         ('_1977', '1977'),
         ('brannan', 'Brannan'),
@@ -45,7 +61,8 @@ class Post(models.Model):
     title = models.CharField(max_length=255)
     content = models.TextField(blank=True)
     image = models.ImageField(
-        upload_to='images/', default='../https://res.cloudinary.com/dobov5ccd/image/upload/v1686837368/media/images/river-rafting_ug2zbp.jpg', blank=True
+        upload_to='images/', default='../profile_image_o63wwb'
+        
     )
     image_filter = models.CharField(
         max_length=32, choices=image_filter_choices, default='normal'
