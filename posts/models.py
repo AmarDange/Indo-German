@@ -23,6 +23,22 @@ class Post(models.Model):
         ('walden', 'Walden'),
         ('xpro2', 'X-pro II')
     ]
+
+
+    class Category(models.TextChoices):
+        '''
+        A class for the age_group key
+        Contains different age ranges to choose from
+        '''
+        INDIA = 'India',
+        Germany = 'germany',
+        ART = 'Art',
+        FOOD = 'food',
+        PLACE = 'Place',
+        CULTURE = 'Culture',
+        OTHER = 'Other'
+
+
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
