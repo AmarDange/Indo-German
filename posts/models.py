@@ -25,18 +25,18 @@ class Post(models.Model):
     ]
 
 
-    class Category(models.TextChoices):
-        '''
-        A class for the age_group key
-        Contains different age ranges to choose from
-        '''
-        INDIA = 'India',
-        Germany = 'germany',
-        ART = 'Art',
-        FOOD = 'food',
-        PLACE = 'Place',
-        CULTURE = 'Culture',
-        OTHER = 'Other'
+    # class Category(models.TextChoices):
+    #     '''
+    #     A class for the age_group key
+    #     Contains different age ranges to choose from
+    #     '''
+    #     INDIA = 'India',
+    #     Germany = 'germany',
+    #     ART = 'Art',
+    #     FOOD = 'food',
+    #     PLACE = 'Place',
+    #     CULTURE = 'Culture',
+    #     OTHER = 'Other'
 
 
     owner = models.ForeignKey(User, on_delete=models.CASCADE)

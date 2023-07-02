@@ -9,7 +9,7 @@ from .settings import (
 @api_view()
 def root_route(request):
     return Response({
-        "message": "Welcome to my drf API!"
+        "message": "Welcome Indo German - Coming together is the beginning. Keeping together is progress. Working together is success.!"
     })
 
 
