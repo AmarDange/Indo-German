@@ -1,0 +1,73 @@
+
+
+.NavBar {
+    background-color:#ffc107;
+    border: 1px solid #000000;
+}
+
+
+.NavBarBrand {
+    font-size: x-large;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 700;
+ 
+   
+}
+
+.NavItems {
+    font-size: large;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-left: 250px;
+    
+   
+    
+}
+
+.NavLink {
+    padding: 5px;
+    color: black;
+}
+
+.Active {
+    color: rgb(0, 0, 0);
+}
+
+.Active i {
+    color: rgb(0, 0, 0);
+}
+
+@media all and (max-width: 991px) {
+    .NavBarBrand {
+        font-size: x-large;
+        padding-left: 20px;
+    }
+
+    .NavItems {
+        font-size: medium;
+    }
+}
+
+@media all and (max-width: 468px) {
+    .NavBarBrand {
+        font-size: x-large;
+        padding-left: 0px;
+    }
+
+
+}
+
+@media all and (max-width: 312px) {
+    .NavBarBrand {
+        font-size: 1.2em;
+    }
+    .NavBarBrand img {
+        width: 30%;
+    }
+    .NavItems {
+        font-size: small;
+        padding-left: 0px;
+    }
+}
+

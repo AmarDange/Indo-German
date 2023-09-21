@@ -1,0 +1,56 @@
+.Post {
+  /* background-color: rgb(205, 231, 219); */
+  background-color: #f8f8f8;
+  border: 2px solid #000505;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.Title {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.Text {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.Post figure,
+h5 {
+  margin: 0 0;
+}
+
+.Heart {
+  color: #f85032;
+}
+
+.Heart:hover {
+  color: #2142b2;
+}
+
+.HeartOutline:hover {
+  color: #f85032;
+}
+
+@media all and (max-width: 312px) {
+  .Title {
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+
+  .Text {
+    font-size: 1em;
+    font-weight: 700;
+  }
+
+  .Date {
+    font-size: 0.8em;
+  }
+
+  .Name {
+    font-size: 1em;
+    font-weight: 600;
+  }
+}
