@@ -104,7 +104,7 @@ if 'CLIENT_ORIGIN_DEV' in os.environ:
     ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://8000-amardange-indogerman-dpwl66fp0jh.ws-eu101.gitpod.io', 'https://indo-german-932e214b60bd.herokuapp.com']
+    'https://8000-amardange-indo-german-74rf7n9y0o.us2.codeanyapp.com', 'https://indo-german-932e214b60bd.herokuapp.com']
 
 CORS_ALLOW_CREDENTIALS = True
 
