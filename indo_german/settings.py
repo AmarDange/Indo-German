@@ -86,15 +86,15 @@ DEBUG = 'DEBUG' in os.environ
 # ALLOWED_HOSTS = ['localhost', 'indo-german-932e214b60bd.herokuapp.com/']
 
 
-ALLOWED_HOSTS = [
-    os.environ.get('ALLOWED_HOST'),
-    '8000-amardange-indo-german-74rf7n9y0o.us2.codeanyapp.com',
-]
-
 # ALLOWED_HOSTS = [
 #     os.environ.get('ALLOWED_HOST'),
-#     'localhost',
+#     '8000-amardange-indo-german-74rf7n9y0o.us2.codeanyapp.com',
 # ]
+
+ALLOWED_HOSTS = [
+    os.environ.get('ALLOWED_HOST'),
+    'localhost', '8000-amardange-indo-german-74rf7n9y0o.us2.codeanyapp.com',
+]
 
 
 # if 'CLIENT_ORIGIN' in os.environ:
