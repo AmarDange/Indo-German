@@ -1,6 +1,7 @@
 from django.contrib.humanize.templatetags.humanize import naturaltime
 from rest_framework import serializers
 from .models import Comment
+from comment_likes.models import CommentLikes
 
 
 class CommentSerializer(serializers.ModelSerializer):
@@ -14,6 +15,8 @@ class CommentSerializer(serializers.ModelSerializer):
     profile_image = serializers.ReadOnlyField(source='owner.profile.image.url')
     created_at = serializers.SerializerMethodField()
     updated_at = serializers.SerializerMethodField()
+    comment_likes_id = serializers.SerializerMethodField()
+    comment_likes_count = serializers.ReadOnlyField()
 
     def get_is_owner(self, obj):
         request = self.context['request']
@@ -25,11 +28,20 @@ class CommentSerializer(serializers.ModelSerializer):
     def get_updated_at(self, obj):
         return naturaltime(obj.updated_at)
 
+    def get_comment_likes_id(self, obj):
+        user = self.context['request'].user
+        if user.is_authenticated:
+            comment_likes = CommentLikes.objects.filter(
+                owner=user, comment=obj
+            ).first()
+            return comment_likes.id if comment_likes else None
+        return None
+
     class Meta:
         model = Comment
         fields = [
             'id', 'owner', 'is_owner', 'profile_id', 'profile_image',
-            'post', 'created_at', 'updated_at', 'content'
+            'post', 'created_at', 'updated_at', 'content', 'comment_likes_id', 'comment_likes_count',
         ]
 
 
