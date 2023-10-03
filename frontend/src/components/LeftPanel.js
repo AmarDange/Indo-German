@@ -48,7 +48,7 @@ const LeftPanel = ({ mobile }) => {
             >
                 <i className="fa fa-heart"></i>Liked
             </Link>
-            </>
+        </>
     );
 
     const loggedOutIcons = (
@@ -62,7 +62,9 @@ const LeftPanel = ({ mobile }) => {
         <Container
             className={`${appStyles.Content} ${mobile && styles.CollapsedColumn} mb-3 ${styles.CreatePanel}`}
         >
-            <h4 className='text-center  mt-2'> My Indo German !</h4>
+            <h5 className='text-center font-weight-bold mb-0"'>My Indo German !</h5>
+            {/* <hr />
+            <h4 className='text-center  mt-2'> My Indo German !</h4> */}
             <div><hr></hr></div>
             <div className='font-weight-bold '>
                 {currentUser ? loggedInIcons : loggedOutIcons}
