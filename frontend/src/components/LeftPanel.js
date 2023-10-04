@@ -32,7 +32,7 @@ const LeftPanel = ({ mobile }) => {
                 className={`${styles.NavLink} p-2`}
                 to={`/profiles/${currentUser?.profile_id}/edit`}
             >
-                <i className="far fa-plus-square"></i>Profile
+                <i className="far fa-edit"></i>Profile
             </Link>
             <br />
             <Link
@@ -44,7 +44,7 @@ const LeftPanel = ({ mobile }) => {
             <br />
             <Link
                 className={`${styles.NavLink} p-2`}
-                to="/Liked"
+                to="/liked"
             >
                 <i className="fa fa-heart"></i>Liked
             </Link>

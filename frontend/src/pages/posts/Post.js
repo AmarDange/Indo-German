@@ -38,15 +38,15 @@ const Post = (props) => {
     };
 
     const handleDelete = async () => {
-        // try {
-        //     await axiosRes.delete(`/posts/${id}/`);
-        //     setTimeout(function () {
-        //         history.goBack();
-        //     }, 1000);
-        // } catch (err) {
-        //     // console.log(err);
-        // }
-        setShowDeleteModal(true);
+        try {
+            await axiosRes.delete(`/posts/${id}/`);
+            setTimeout(function () {
+                history.goBack();
+            }, 1000);
+        } catch (err) {
+            // console.log(err);
+        }
+        setShowDeleteModal(false);
     };
     const handleCancel = () => {
         setShowDeleteModal(false);
@@ -101,7 +101,6 @@ const Post = (props) => {
                         {is_owner && postPage && (
                             <MoreDropdown
                                 handleEdit={handleEdit}
-                                handleDelete={handleDelete}
                                 handleDeleteClick={handleDeleteClick}
                             />
                         )}
