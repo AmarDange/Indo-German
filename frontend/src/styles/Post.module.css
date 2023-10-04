@@ -1,10 +1,10 @@
 .Post {
     /* background-color: rgb(205, 231, 219); */
     background-color: rgba(0, 204, 255, 0.312);
-    border: 2px solid #151616;
-    border-radius: 5px;
+    border: 2px solid #2d2f2f;
+    border-radius: 20px;
     margin-bottom: 16px;
-    text-align: right;
+    text-align: center;
 }
 
 .Title {
