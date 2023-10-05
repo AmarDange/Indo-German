@@ -4,11 +4,7 @@ import { Link } from "react-router-dom";
 import landingImage from "../assets/landing_page_img.jpg";
 import styles from "../styles/LandingPage.module.css";
 
-/** 
- * Landing page with information about the App
- * Prompts user to sign up/sign in
- * Gives instructions on how to he started
-**/
+
 const LandingPage = () => {
     return (
         <>
@@ -81,4 +77,4 @@ const LandingPage = () => {
     );
 };
 
-export default LandingPage
+export default LandingPage;

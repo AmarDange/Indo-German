@@ -63,8 +63,6 @@ const LeftPanel = ({ mobile }) => {
             className={`${appStyles.Content} ${mobile && styles.CollapsedColumn} mb-3 ${styles.CreatePanel}`}
         >
             <h5 className='text-center font-weight-bold mb-0"'>My Indo German !</h5>
-            {/* <hr />
-            <h4 className='text-center  mt-2'> My Indo German !</h4> */}
             <div><hr></hr></div>
             <div className='font-weight-bold '>
                 {currentUser ? loggedInIcons : loggedOutIcons}

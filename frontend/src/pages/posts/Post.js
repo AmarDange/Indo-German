@@ -17,13 +17,11 @@ const Post = (props) => {
         profile_image,
         comments_count,
         likes_count,
-        // post_likes_id,
         like_id,
         title,
         content,
         image,
         updated_at,
-        // postPage,
         setPosts,
     } = props;
 

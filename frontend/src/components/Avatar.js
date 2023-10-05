@@ -1,10 +1,6 @@
 import React from "react";
 import styles from "../styles/Avatar.module.css";
 
-/*
-* Avatar component with default height prop
-* Credit: CI "Moments" Walkthrough
-*/
 
 const Avatar = ({ src, height = 50, text }) => {
     return (
