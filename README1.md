@@ -122,7 +122,6 @@ The link to User Personas can be found [here](docs/agile/user_personas.pdf).
 	1. Latest entries feature on top or first
 	2. Click on post to view post details
 	3. Ability to comment and like a posts
-
  4. Ability to like a comment
 	5. Create, Edit and Delete own post and comment.
 
@@ -547,7 +546,7 @@ As shown on link provided:
 - Reusable component shows 10 most followed profiles in large devices in right column.
 - It shows first four most followed profiles in the app in medium to small devices.
 - The component displays user avatar, name and follow/unfollow button.
-    - - Users are able to follow a specific profile they like and then be able to easily view their posts in the Feed.
+  - - Users are able to follow a specific profile they like and then be able to easily view their posts in the Feed.
 
 <details>
 <summary>Popular Profiles</summary>
