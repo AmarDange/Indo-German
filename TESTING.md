@@ -274,6 +274,99 @@ The sections below presents an exhaustive list of manual tests done.
 
 ## Validation
 
+- Following files have been run through CI Python Linter and all files returned no issues.
+
+<details>
+<summary>Screenshot of posts models.py</summary>
+<img src='docs/validations/post-models-py.png' alt='post models validation'>
+</details>
+
+<details>
+<summary>Screenshot of posts serializers.py</summary>
+<img src='docs/validations/post-serializers-py.png' alt='post serializers validation'>
+</details>
+
+<details>
+<summary>Screenshot of posts views.py</summary>
+<img src='docs/validations/posts-views-py.png' alt='post views validation'>
+</details>
+
+<details>
+<summary>Screenshot of postlikes models.py</summary>
+<img src='docs/validations/post-likes-models-py.png' alt='post likes models validation'>
+</details>
+
+<details>
+<summary>Screenshot of postlikes serializers.py</summary>
+<img src='docs/validations/post-likes-serializers-py.png' alt='post likes serializers validation'>
+</details>
+
+<details>
+<summary>Screenshot of postlikes views.py</summary>
+<img src='docs/validations/post-likes-views-py.png' alt='post likes views validation'>
+</details>
+
+<details>
+<summary>Screenshot of commentlikes models.py</summary>
+<img src='docs/validations/comment-likes-models-py.png' alt='comment likes models validation'>
+</details>
+
+<details>
+<summary>Screenshot of commentlikes serializers.py</summary>
+<img src='docs/validations/comment-likes-serializers-py.png' alt='comment likes serializers validation'>
+</details>
+
+<details>
+<summary>Screenshot of commentlikes views.py</summary>
+<img src='docs/validations/comment-likes-views-py.png' alt='comment likes views validation'>
+</details>
+
+<details>
+<summary>Screenshot of comments models.py</summary>
+<img src='docs/validations/comments-models-py.png' alt='comments models validation'>
+</details>
+
+<details>
+<summary>Screenshot of comments serializers.py</summary>
+<img src='docs/validations/comments-serializers-py.png' alt='comments serializers validation'>
+</details>
+
+<details>
+<summary>Screenshot of comments views.py</summary>
+<img src='docs/validations/comments-views-py.png' alt='comments views validation'>
+</details>
+
+<details>
+<summary>Screenshot of followers models.py</summary>
+<img src='docs/validations/followers-models-py.png' alt='followers models validation'>
+</details>
+
+<details>
+<summary>Screenshot of followers serializers.py</summary>
+<img src='docs/validations/followers-serializers-py.png' alt='followers serializers validation'>
+</details>
+
+<details>
+<summary>Screenshot of followers views.py</summary>
+<img src='docs/validations/followers-views-py.png' alt='followers views validation'>
+</details>
+
+<details>
+<summary>Screenshot of profiles models.py</summary>
+<img src='docs/validations/profiles-models-py.png' alt='profiles models validation'>
+</details>
+
+<details>
+<summary>Screenshot of profiles serializers.py</summary>
+<img src='docs/validations/profiles-serializers-py.png' alt='profiles serializers validation'>
+</details>
+
+<details>
+<summary>Screenshot of profiles views.py</summary>
+<img src='docs/validations/profiles-views-py.png' alt='profiles views validation'>
+</details>
+
+
 ### W3C Validator 
 
 The [W3C Markup Validation Service](https://validator.w3.org/) was used to validate the HTML of the website. No errors were identified. 
