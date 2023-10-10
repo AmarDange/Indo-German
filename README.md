@@ -316,7 +316,7 @@ Goal: Adjust layout and basic styles for components
 - Add footer
 - Configure layouts
 
-[Back to top ⇧](#table-of-contents)
+[Back to top ⇧](#contents)
 
 ### Tasks
 
@@ -340,18 +340,21 @@ The tasks that I have followed during the development phase were carried out in 
 **Future Tasks**
 There are so many feaures I wish to build upon. But due to severe time constraints, the App is in it's basic form. Few features, I would've liked to have are:
 
-- Add category (by India, Food, Germany, Culture) in left panel. So that user can identify soultion quickly.
-- Add chat window, if someone wants to have personal chat of there topic then user can do it in chat window.
-- Functionality to crop image while uploading image in profile.
-- Uploading video.
+- Want to add category (by India, Food, Germany, Culture) in left panel. So that user can identify soultion quickly.
+- Want to add chat window, if someone wants to have personal chat of there topic then user can do it in chat window.
+- Want to add emoji-picker in comment section.
+- Wish to include a feature where users can add a media file instead of an image file if they wish to share a video.
+
+[Back to top ⇧](#contents)
 
 ## Design
 
 ### Colours
 
-- The colour scheme has considered based on easy accessibility for all.
-- Complimentarity was key feature in color selection, to give it a pleasant feel for all age groups.
-- The colors have been rendered differently for posts, so that user can easily distinguish between the
+The colour scheme has considered based on easy accessibility for all.
+Complimentarity was key feature in color selection, to give it a pleasant feel for all age groups.
+The palette was generated with inspiration from palettes provided by [Coolers](https://coolors.co/). The color palette used is as shown below.
+![Color Palette](documentation/color-palette.png)
 
 ### Typography
 
