@@ -358,11 +358,20 @@ The palette was generated with inspiration from palettes provided by [Coolers](h
 
 ### Typography
 
-The fonts are taken from [Google Fonts](https://fonts.google.com/about).
+The fonts are taken from [Google Fonts](https://fonts.google.com/).
 
 ### Imagery
 
 The imagery on the website has been seleced according to the post requirement. Many images were taken from Google Images.
+
+### Wireframes
+
+The wireframes were generated using Balsamiq. The wireframes can be found in these links:<br>
+[Wireframes for Desktop](documentation/wireframes/Desktop-wireframes.pdf)<br>
+[Wireframes for Tablet](documentation/wireframes/Tablet-Wireframes.pdf)<br>
+[Wireframes for Mobile](documentation/wireframes/Mobile-wireframes.pdf)
+
+[Back to top ⇧](#contents)
 
 ## Features
 
@@ -378,12 +387,9 @@ The imagery on the website has been seleced according to the post requirement. M
   - Contains links to social media Linkedin and GitHub page (opening in a separate window)
 - Landing page main body includes description about the app and User guidance
 - Contains user guidance to Sign in Sign Up links
-As shown here:
 
-<details>
-<summary>Landing Page</summary>
-<img src='docs/features/landingpage.JPG'>
-</details>
+As shown here:
+![Landing Page](documentation/features/landing-page.png)
 
 **Home Page**
 
@@ -595,60 +601,49 @@ A number of the components created are reusable and were used across the website
 
 - `<Asset />` - Asset.js - renders a loading spinner. It is utilized in several places across the site, including showing a loading spinner where API calls are made.
 - `<Avatar />` - Avatar.js - displays a user's profile image. It is used in the Create Panel along with the Username. Passed props allow for setting image source and size and adjust image dimensions depending on where the component is rendered.
-- `<DropdownMenu />` - DropdownMenu.js - reusable component, used to render the dropdown menu which allows user to edit or delete their own posts or comments, and also edit their profile or change profile password. provides a dropdown menu with some additional actions a user can take, such as editing and deleting.
+- `<MoreDropdown />` - MoreDropdown.js - reusable component, used to render the dropdown menu which allows user to edit or delete their own posts or comments, and also edit their profile or change profile password. provides a dropdown menu with some additional actions a user can take, such as editing and deleting.
 - `<NavBar />` - NavBar.js-  reusable component with the content depending on the login status of the user. For logged in user it shows Home, About, Feed and Liked and Sign Out Nav items. For those who are not logged in, it displays icon links to about, sign up or sign in. The component is used on each page of the app.
 - `<PageNotFound />` - PageNotFound.js - specific component to display 404 error message for the url which does not exist.
 - `<PopularProfiles />` - PopularProfiles.js - reusable component showing most followed profiles in the app named as "Active Inspirers". The component displays user avatar, name and follow/unfollow button.
 - `<DeleteModal />` - DeleteModal.js - reusable component, used to render the modal when user want to delete their own post and comment.
 
-## Technologies Used
+## Technologies
 
-### Languages and Packages/Libraries Used
+### Languages Used
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+- [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+- [React JSX](https://reactjs.org/docs/introducing-jsx.html)
 
-1. [React](https://reactjs.org/)
+### Tools
 
-2. [HTML5](https://en.wikipedia.org/wiki/HTML5)
+- [Balsamiq](https://balsamiq.com/)- to create the wireframes for the project
+- [Chrome dev tools](https://developers.google.com/web/tools/chrome-devtools/) - for debugging of the code and checking site responsiveness
+- [LICEcap](https://www.cockos.com/licecap/) - to generate gif files for testing all the features of the app
+- [Cloudinary](https://cloudinary.com/) - to store static files
+- [Coolors](https://coolors.co/?home) - for color palette
+- [Favicon.io](https://favicon.io) - to generate the site favicon
+- [Font Awesome](https://fontawesome.com/) - Icons from Font Awesome, used in NavBar and create buttons, like and comment icons
+- [Google Fonts](https://fonts.google.com/) - import font
+- [Git](https://git-scm.com/) - for version control within VSCode to push the code to GitHub
+- [GitHub](https://github.com/) - for remote repository to store project code
+- [Gitpod](https://gitpod.io) - to host a virtual workspace
+- Validation:
+  - [W3C Validator](https://validator.w3.org/) was used to validate the html
+  - [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/) was used to validate the css
+  - [ESLint](https://eslint.org/) used to validate JSX code
 
-3. [CSS3](https://en.wikipedia.org/wiki/CSS)
+### Frameworks, Libraries and Programs
 
-4. [JavaScript](https://www.javascript.com/)
+- [React Bootstrap4](https://react-bootstrap-v4.netlify.app/) - For styling the site and site responsiveness across various devices
+- [ReactJS](https://reactjs.org/) - To build the functionality of the site
+- [Axios](https://axios-http.com/docs/intro) - Used for promise-based HTTP. axios was used to send API requests from the React project to the be_inspired_drf_api and avoid any CORS errors when sending cookies.
+- [JWT](https://jwt.io/) - A library to decode out JSON Web token. JWT prevents unauthenticated user from making extra network requests to refresh their access token. It is also used to remove the timestamp from the browser when the user refreshes token expires or the user logs out.
+- [Popper](https://popper.js.org/) - A 3rd party library used by React-Bootstrap to make sure the dropdown menus position is fixed on all browsers.
+- [React Infinite Scroll](https://www.npmjs.com/package/react-infinite-scroll-component) - To enable component to load content (posts, recommendations and comments) automatically as the user scrolls towards the bottom of the page without having to jump to next/previous page.
+- [React Router](https://v5.reactrouter.com/web/guides/quick-start) - Used for dynamic routing. This library enables the navigation among views of various components and control what the user can see depending on the URL they have accessed in the browser.
 
-5. [React Bootstrap](https://react-bootstrap.github.io/) - For styling the site and site responsiveness across various devices
-
-6. [React Infinite Scroll](https://www.npmjs.com/package/react-infinite-scroll-component) - To enable component to load content (posts, recommendations and comments) automatically as the user scrolls towards the bottom of the page without having to jump to next/previous page.
-
-7. [React Router](https://v5.reactrouter.com/web/guides/philosophy) - Used for dynamic routing. This library enables the navigation among views of various components and control what the user can see depending on the URL they have accessed in the browser.
-
-8. - [JWT](https://jwt.io/) - A library to decode out JSON Web token. JWT prevents unauthenticated user from making extra network requests to refresh their access token. It is also used to remove the timestamp from the browser when the user refreshes token expires or the user logs out.
-
-### Programs Used
-
-1. [Git](https://git-scm.com/)
-    - Git was used by utilizing the Gitpod terminal to commit to Git and Push to GitHub. Version control.
-
-2. [GitHub](https://github.com/)
-    - GitHub was used to store the project code after being pushed in by Git. Project repository linked with Heroku for deployment process. GitHub was also used to create the kanban board.
-
-3. [Heroku](https://dashboard.heroku.com/login)
-    - Heroku was used to deploy this project. Heroku's Postgres was used as the database.  
-
-4. [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
-    - W3C CSS validator used to check the CSS3 code.
-
-5. [Axios](https://axios-http.com/)
-    - Promise based http client for making http requests to the back end API
-
-6. [Cloudinary](https://cloudinary.com/)
-    - Cloudinary used to host the uploaded images.
-
-7. [Font Awesome](https://fontawesome.com/)
-    - Font Awesome was used for the fonts.
-
-8. [Google Fonts](https://fonts.google.com/)
-    - Google Fonts was used for the fonts.
-
-9. [Favicon.io](https://favicon.io/)
-    - Favicon.io was used for the favicon.
+[Back to top ⇧](#contents)
 
 ## Production
 
@@ -678,44 +673,9 @@ Many bugs have occurred during the development of the front end project. Most no
 - Fix: Added CSRF_TRUSTED_ORIGINS to your settings.py file and updated CLIENT_ORIGIN and CLIENT_ORIGIN_DEV in Heroku.
 
 ## Testing
+Testing has taken place continuously throughout the development of the project. Each view was tested regularly. When the outcome was not as expected, debugging took place at that point. An exhaustive list of features were checked on different devices and browsers. They were performed and their scrrenshots can be found in the features section on how the distinct features render.
 
-### Performance
-
-#### Google's Lighthouse Performance
-
-##### Desktop Results
-
-![Lighthouse Desktop Result](docs/features/dekstoplighthouse.JPG).
-
-##### Mobile Results
-
-![Lighthouse Mobile Result](docs/features/mobilelighthouse.JPG).
-
-### Validation
-
-I used the following validation tools to validate HTML, CSS
-
-- HTML using [W3C HTML validator](https://validator.w3.org/) was used to validate the HTML of the website.
-All the Django templates html files hava been manually copying the source of the rendered pages and then validating using the W3C Validator. I found one erros and warning messages but These do not seem to affect the functionality of the website.
-Also I have discussed with tutor Jason but He is also suggested to keep as it is.
-
-![HTML Result](docs/features/HTMLvalidator.JPG).
-
-- CSS using [Jigsaw CSS validator](https://jigsaw.w3.org/css-validator/) was used for validating the CSS stylesheet. All CSS file was tested by manually copying the CSS codes into the manual input option.
-
- ![CSS Result](docs/features/cssvalidator.JPG).
-
-### User Story Testing
-
-BDD, or Behaviour Driven Development, is the process used to test user stories in a non-technical way, allowing anyone to test the acceptance criteria of user story.
-
-- Link for TESTING.md file:- [Testing Results Here](TESTING)
-
-### Manual Testing
-
-Testing has taken place continuously throughout the development of the project. Each view was tested regularly. When the outcome was not as expected, debugging took place at that point. An exhaustive list of features were checked on different devices and browsers. They were performed and their scrrenshots can be found in the features section on how the distinct features render. All clickable links redirect to the correct pages.
-
-- Link for TESTING.md file:- [Testing Results Here](TESTING)
+- Link for TESTING.md file:- [Testing Results Here](TESTING.md)
 
 ## Deployment
 
@@ -731,13 +691,13 @@ This application has been deployed from GitHub to Heroku by following the steps 
 6. Click on the 'Deploy' tab and go to 'Deployment Method' and choose GitHub
 7. Navigate to 'App connected to GitHub' and search for the relevant repository
 8. Select the repository you wish to deploy and click 'Connect'
-9. Scroll down to the bottom and then select “Manual deploy”, and choose your repository.
+9. Scroll down to the bottom and then select “Manual deploy”, and choose your repository. 
 10. Wait for your build to complete.
 11. When you see the message “deployed to Heroku” in the build log, click the “open app” button at the top of the page.
 
 ### Connecting to API
 
-- Navigate to the Heroku app for Indo german_DRF_API project and under the 'Settings' tab add the following config vars: Key: Client_Origin and Key: Client_Origin_Dev
+ - Navigate to the Heroku app for Be-Inspired_DRF_API project and under the 'Settings' tab add the following config vars: Key: Client_Origin and Key: Client_Origin_Dev 
 - Ensure that the trailing '/' of the value of these key is removed from the end of both links and save the config vars.
 - Install the Axios package, and create the supporting axiosDefaults.js file
 
@@ -745,46 +705,39 @@ This application has been deployed from GitHub to Heroku by following the steps 
 
 1. Comment out all the console.log within the codes.
 2. Navigate to package.json and in the scripts section add the following command:
-
 ```
 "heroku-prebuild": "npm install -g serve,"
 ```
-
 3. Add a Procfile to the root of the project with the following:
-
 ```
 web: serve -s build
 ```
-
 4. Git add, commit and push your code
-5. Navigate to Heroku and deploy the project via the deploy button under the 'Deploy'
+5. Navigate to Heroku and deploy the project via the deploy button under the 'Deploy' tab
+
+[Back to top ⇧](#contents)
+
 
 ## Credits and Resources
 
 - [Code Institute Moments Project](Solutions)
-  - Functionality of the project credit goes to Code Institute. Comments are made along the project of where code is used from Code Institute's Moments project.
+    - Functionality of the project credit goes to Code Institute. Comments are made along the project of where code is used from Code Institute's Moments project. 
 
 - [Stack Overflow](https://stackoverflow.com/)
-  - Stack Overflow was referred to many times while trying to debug code. Inspiration on front-end features and functionality was also taken from Stack Overflow.
+    - Stack Overflow was referred to many times while trying to debug code. 
 
-- [React Documentation](https://reactjs.org/docs/getting-started.html)
-  - React documentation was referred to many times during the development of this project.
+- [JSX Validation](https://gist.github.com/ianmeigh/8e603b91a38d7829d959402bfcf29d3d)
+    - Ian Meigh's tutorial on ESlint was used for ESlint testing.
 
 - [React Bootstrap](https://react-bootstrap.github.io/)
-  - Components from React Bootstrap were used in the project (Navigation bar, forms, cards, etc).
+    - Components from React Bootstrap were used in the project (Navigation bar, forms, cards, etc).
 
-- [Medium](https://medium.com/)
-  - Medium was referred to for information on how import multiple classes, how to use React Bootstrap syntax, etc.
+## Acknowledgements
 
-- [React Router Documentation](https://v5.reactrouter.com/web/guides/quick-start)
-  - React Router documentation was referred to for the use of routes, useNavigate, and how to show the active links in navbar.
-
-- Followed the project of one of my friend who is also a CI student Roshna Vakeel
-
-### Acknowledgements
+- My Mentor Mr. Akshat Garg for his guidance and advice during the project.
 
 - Thank you to Tutor Support for always being there for me, and always being patient with my questions.
 
 - Thank you to CI Slack Channel for taking time out of their day to answer my questions.
 
-- My Mentor Mr. Akshat Garg for his guidance and advice during the project.
+[Back to top ⇧](#contents)
