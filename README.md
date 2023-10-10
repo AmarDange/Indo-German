@@ -609,6 +609,29 @@ A number of the components created are reusable and were used across the website
 
 ## Technologies
 
+1. [Django REST Framework](https://pypi.org/project/djangorestframework/3.14.0/)
+
+2. [Django](https://www.djangoproject.com/)
+
+3. [Python](https://www.python.org/)
+
+4. [psycopg2](https://pypi.org/project/psycopg2/)
+
+5. [Django all-auth](https://django-allauth.readthedocs.io/en/latest/installation.html)
+
+6. [gunicorn](https://gunicorn.org/)
+
+7. [PostgreSQL](https://www.postgresql.org/)
+
+8. [dj-rest-auth](https://pypi.org/project/dj-rest-auth/2.2.5/)
+
+9. [Django-filter](https://pypi.org/project/django-filter/22.1/)
+
+10. [Djangorestframework-simplejwt](https://pypi.org/project/djangorestframework-simplejwt/5.2.1/)
+
+11. [Django-cors-headers](https://pypi.org/project/django-cors-headers/3.13.0/)
+
+    
 ### Languages Used
 - [CSS](https://en.wikipedia.org/wiki/CSS)
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
@@ -628,6 +651,8 @@ A number of the components created are reusable and were used across the website
 - [Git](https://git-scm.com/) - for version control within VSCode to push the code to GitHub
 - [GitHub](https://github.com/) - for remote repository to store project code
 - [Gitpod](https://gitpod.io) - to host a virtual workspace
+- [Heroku](https://dashboard.heroku.com/login)
+- [ElephantSQL](https://www.elephantsql.com/)
 - Validation:
   - [W3C Validator](https://validator.w3.org/) was used to validate the html
   - [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/) was used to validate the css
