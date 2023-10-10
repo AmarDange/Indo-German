@@ -56,15 +56,14 @@ The main motive is to provide information about eduation, Places to visit, food,
 - [Acknowledgements](<#acknowledgements>)
 
 
-
 ## User Experience (UX)
 
 ### Site Goals
 
-- "Indo German" is a social media App mainly made for everyone who is looking to socialize and share their expereince while living in abroad and share thoughts with others.
-- The goal of the website is to serve as a social media platform for all ages of different users. Users should be able to create an account without an email address and do not compromise their personal data. Users are able to create accounts, log in, post whatever they wish with a title, content, and image, make comments on other user's posts, and like other user's posts and comments. Users also have the freedom to personalize their profile by adding their own profile display photo and changing their 'Bio' section. Users have the freedom to edit and delete their posts and comments. A site like this is needed because, today, security is a huge issue. Making a social media account with Twitter, Facebook, Reddit typically asks for your email address and you would have to give away personal information. With Indo German, there are no ties to you and your personal life. You create an account, post anonymously and of your free will, and continue living your secure life.
-
-
+- **Indo German** is a social-media website designed to mimic the features of Twitter.
+- User can create an account, log in, make posts about incomparable memories from their childhood, and be able to engage with other users by commenting and liking on other posts/comments. Also user can change their profile photo and profile biography.
+- The basic goal is to re-live the happy moments of your childhood and provide a happy mood to the users.
+- Users can enable the network using this social media platform.
 
 ### Scope
 
@@ -90,10 +89,9 @@ The main motive is to provide information about eduation, Places to visit, food,
 
 - Posts and Comment Features
 	1. Latest entries feature on top or first
-	2. Click on post to view post details
+	2. Click on post to view post details 
 	3. Ability to comment and like a posts
-
- 4. Ability to like a comment
+    	4. Ability to like a comment
 	5. Create, Edit and Delete own post and comment.
 
 - Profiles Features
@@ -102,11 +100,11 @@ The main motive is to provide information about eduation, Places to visit, food,
 	3. Password change option
 	4. Profile edit option
 
-[Back to top ⇧](#table-of-contents)
+[Back to top ⇧](#contents)
 
 ## Epics and User Stories
 
-8 Epics were created which were further developed into 30 User Stories.Many of the user stories are worded similarly to the Moments walkthrough project because the functionality is quite similar - especially with navigation and authentication, posts, likes and comments.
+8 Epics were created which were further developed into 34 User Stories.Many of the user stories are worded similarly to the Moments walkthrough project because the functionality is quite similar - especially with navigation and authentication, posts, likes and comments.
 
 ### 1. Website UI
 
@@ -146,10 +144,11 @@ The main motive is to provide information about eduation, Places to visit, food,
 
 **Epic Goals for End User**
 
-1. An easy to use navigation
+1. An easy to use navigation 
 2. Home page with posts list with infinite scroll visible to all
 3. Navigation routing
 4. Navigation conditional rendering
+5. 404 page
 
 **Related User Stories**
 
@@ -239,7 +238,7 @@ The main motive is to provide information about eduation, Places to visit, food,
 - As a **site user** I can **see the most popular profiles** so that **I can see who has the most interesting posts**
 - As a **site user** I can **update my own data** so that **I can make changes as needed**
 
-[Back to top ⇧](#table-of-contents)
+[Back to top ⇧](#contents)
 
 ## Agile Development
 
