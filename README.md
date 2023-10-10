@@ -5,6 +5,8 @@
 The main reason behind this App is to help or provide information to immigrants in Germnay or India.
 The main motive is to provide information about eduation, Places to visit, food, Visa. The attempt of the project is to create a social media App to connect people who wish to help others who are coming to germany or india. Some base points are shared on this App where people get basic idea from India and germany.
 
+**Indo-German** is a social-media app designed to mimic the features of Twitter. Users can create an account, log in, make a post, make comments on posts, like other users' posts and comments, and change their profile photo and profile biography. This website is designed to allow users to make posts about incomparable suggetion/information as an expat, tourist and be able to engage with other users by commenting and liking on other posts/comments. This is the cpmbined repository for the React frontend of Indo German, created with HTML, CSS, Bootstrap, React. Components were reused throughout the React project as each part of the website was broken into individual components and linked together, transferring states and data. The project also utilises a Django Rest Framework web API.
+
 ![Screenshot of Am I Responsive](docs/features/amiresponsive.JPG)
 
 ## Deployed Link
@@ -13,8 +15,7 @@ The main motive is to provide information about eduation, Places to visit, food,
 
 ## Back End Links
 
-- [Back End Deployed Link](https://indo-german-932e214b60bd.herokuapp.com/)
-- [Back End GitHub](https://indo-german-932e214b60bd.herokuapp.com/)
+- [GitHub Link](https://github.com/AmarDange/Indo-German)
 
 ## [Table of Contents](#table-of-contents)
 

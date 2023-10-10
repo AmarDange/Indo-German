@@ -5,15 +5,13 @@
 }
 
 .Main {
-    /* padding-top: 90px;
-    padding-bottom: 50px; */
-    padding-top: 100px;
+
+    padding-top: 75px;
 }
 
 .Content {
     background-color: #ffffff;
     padding: 10px;
-    /* border-radius: 2px; */
     border-radius: 15px;
     border: 1px solid #000000;
 }
