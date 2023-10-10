@@ -92,10 +92,7 @@ The main motive is to provide information about eduation, Places to visit, food,
 - "Indo German" is a social media App mainly made for everyone who is looking to socialize and share their expereince while living in abroad and share thoughts with others.
 - The goal of the website is to serve as a social media platform for all ages of different users. Users should be able to create an account without an email address and do not compromise their personal data. Users are able to create accounts, log in, post whatever they wish with a title, content, and image, make comments on other user's posts, and like other user's posts and comments. Users also have the freedom to personalize their profile by adding their own profile display photo and changing their 'Bio' section. Users have the freedom to edit and delete their posts and comments. A site like this is needed because, today, security is a huge issue. Making a social media account with Twitter, Facebook, Reddit typically asks for your email address and you would have to give away personal information. With Indo German, there are no ties to you and your personal life. You create an account, post anonymously and of your free will, and continue living your secure life.
 
-### User Personas
 
-As mentioned in Site Goals, the users expected to be visiting this website regularly are going anyone seeking information or any experince while living in Germany or India. User can search information on this app, if they want to plan come to germany or India. I created 4 fictional characters which represents the target users. The user personas with their needs, goals and frustrations are enlisted, which helped me design this website with a point of view of distinct users.
-The link to User Personas can be found [here](docs/agile/user_personas.pdf).
 
 ### Scope
 
