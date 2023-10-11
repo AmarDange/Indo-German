@@ -43,7 +43,7 @@ const LandingPage = () => {
                             </Link>
                             <Link to="/Signin">
                                 <Button className={`${styles.Button} mb-2`}>
-                                    Member? Sign In and Start!
+                                    Member? Sign in and Start!
                                 </Button>
                             </Link>
                         </div>

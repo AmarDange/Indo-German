@@ -45,7 +45,7 @@ a:hover {
 
 a:hover i {
     cursor: pointer;
-    color: #2142b2;
+    color: #219EBC;
     transition: color ease-in-out 0.3s;
 }
 
@@ -63,7 +63,7 @@ i {
 i:hover {
     cursor: pointer;
     transition: color ease-in-out 0.3s;
-    color: #2142b2;
+    color: #219EBC;
 }
 
 figure {

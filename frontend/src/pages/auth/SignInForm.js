@@ -52,7 +52,7 @@ const LoginForm = () => {
             <Row className="p-4 mt-5 justify-content-md-center">
                 <Col className="text-center">
                     <Image className={styles.LogoImage} src={logoImage} />
-                    <h1 className="mb-3">Sign In</h1>
+                    <h1 className="mb-3">Sign in</h1>
                     <Row className="justify-content-center">
                         <Form onSubmit={handleSubmit}>
                             <Form.Group controlId="username" className="text-left mb-2">
@@ -94,7 +94,7 @@ const LoginForm = () => {
                                 aria-label="Click here to log in!"
                                 type="submit"
                             >
-                                Signin!
+                                Sign in!
                             </Button>
                             {errors.non_field_errors?.map((message, idx) => (
                                 <Alert key={idx} variant="warning" className="mt-3">

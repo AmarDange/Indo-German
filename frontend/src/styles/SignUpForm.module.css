@@ -6,28 +6,28 @@
     width: 50%;
     border-radius: 20px;
     box-shadow: rgba(177, 86, 11, 0.15) 3px 1.95px 2.6px;
-  }
-  
-  
-  h2 {
+}
+
+
+h2 {
     color: black;
     text-transform: uppercase;
     font-weight: 700;
     text-align: center;
-  }
-  
-  a:hover {
+}
+
+a:hover {
     text-decoration: none;
-    color: #d8412d;
-  }
-  
-  p {
+    /* color: #d8412d; */
+}
+
+p {
     margin-top: 20px;
     text-align: center;
-  }
-  
-  @media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 768px) {
     .Container {
-      width: 80%;
+        width: 80%;
     }
-  }
+}
