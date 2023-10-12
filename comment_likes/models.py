@@ -18,7 +18,7 @@ class CommentLikes(models.Model):
         Class meta to set the order of comments likes, newest first
         '''
         ordering = ['-created_on']
-        unique_together = ['owner', 'comment',]
+        unique_together = ['owner', 'comment', ]
 
     def __str__(self):
         """

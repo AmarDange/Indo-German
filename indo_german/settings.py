@@ -55,7 +55,7 @@ if 'DEV' not in os.environ:
 #      DATABASES = {
 #          'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 #      }
-    #  print('connected')
+#  print('connected')
 
 REST_USE_JWT = True
 JWT_AUTH_SECURE = True
