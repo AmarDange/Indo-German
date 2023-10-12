@@ -5,8 +5,8 @@
 ## Table of Contents
 - [Testing](#testing)
   - [User Story Testing](<#user-story-testing>)
-  - [Manual Testing Backend](#manual-testing-backend)
-  - [Manual Testing of Features Frontend](#manual-testing-of-features-frontend)
+  - [Manual Testing - Backend](#manual-testing-backend)
+  - [Manual Testing of Features - Frontend](#manual-testing-of-features-frontend)
 - [Validation - Backend](#validation-backend)
 - [Validation - Frontend](#validation-frontend)
 - [Performance](#performance)
@@ -47,7 +47,9 @@ As a site user <br>I can update my own profile <br> so that I can make changes a
 
 ---
 
-### Manual Testing Backend
+
+
+### Manual Testing - Backend
 
 - Thorough lists of tests have been done on the back end project. These are lists of successful results after vigorous manual testing.
   Testing was done manually by trying each list over and over to ensure success. I have tested each list over and over again to ensure that everything is working perfectly.
@@ -153,7 +155,8 @@ As a site user <br>I can update my own profile <br> so that I can make changes a
    - Users are able to log out of the back end successfully.
 
 
-### Manual Testing of Features
+
+### Manual Testing of Features - Frontend
 I manually tested all the features of the website making sure to go through them with different browsers and device sizes. I also checked the features of the site against the original user stories and compared them with the acceptance Criteria. 
 
 The aspects considered while testing:
@@ -191,7 +194,7 @@ The sections below presents an exhaustive list of manual tests done.
 |  **Expected Feature** | **Result** |
 |-------------------------|---------------------|
 | On the top position, NavBar Home NavItem changes view| **Pass** |
-| On the left panel, one can see categories section| **Pass** |
+| On the left panel, one can see "My Indo German" section| **Pass** |
 | On the right panel, one can see PopularProfiles section| **Pass** |
 | In the center, one can see posts section | **Pass** |
 | Latest post features first | **Pass** |
@@ -212,7 +215,7 @@ The sections below presents an exhaustive list of manual tests done.
 |  **Expected Feature** | **Result** |
 |-------------------------|---------------------|
 | On the top position, NavBar Feed NavItem changes view  | **Pass** |
-| On the left panel, one can see section| **Pass** |
+| On the left panel, one can "My Indo German" see section| **Pass** |
 | On the right panel, one can see PopularProfiles section| **Pass** |
 | In the center, one can see section enlisting all the posts of the profiles user follows | **Pass** |
 | Post section has infinite scroll feature| **Pass** |
@@ -233,7 +236,7 @@ The sections below presents an exhaustive list of manual tests done.
 |  **Expected Feature** | **Result** |
 |-------------------------|---------------------|
 | On the top position, NavBar Liked NavItem changes view  | **Pass** |
-| On the left panel, one can see caregory section| **Pass** |
+| On the left panel, one can see "My Indo German" section| **Pass** |
 | On the right panel, one can see PopularProfiles section| **Pass** |
 | In the center, one can see section enlisting all the posts that user liked | **Pass** |
 | Post section has infinite scroll feature| **Pass** |
@@ -256,11 +259,11 @@ The sections below presents an exhaustive list of manual tests done.
 | Contains title, content and image fields that users can fill and submit| **Pass** |
 | Upon submitting filled form, post is shown in the post list page (Home page) | **Pass** |
 
-#### Categories
+#### Left Panel Page
 
 |  **Expected Feature** | **Result** |
 |-------------------------|---------------------|
-| User can sort the different categories of posts by selecting a badge | **Pass** |
+| User can edit own profile ,create post and see onn liked post by selecting a badge | **Pass** |
 
 #### Search Feature
 
@@ -378,6 +381,8 @@ The sections below presents an exhaustive list of manual tests done.
 
 ---
 
+
+
 ## Validation - Backend
 
 - Following files have been run through CI Python Linter and all files returned no issues.
@@ -474,99 +479,6 @@ The sections below presents an exhaustive list of manual tests done.
 
 
 ## Validation - Frontend
-
-- Following files have been run through CI Python Linter and all files returned no issues.
-
-<details>
-<summary>Screenshot of posts models.py</summary>
-<img src='docs/validations/post-models-py.png' alt='post models validation'>
-</details>
-
-<details>
-<summary>Screenshot of posts serializers.py</summary>
-<img src='docs/validations/post-serializers-py.png' alt='post serializers validation'>
-</details>
-
-<details>
-<summary>Screenshot of posts views.py</summary>
-<img src='docs/validations/posts-views-py.png' alt='post views validation'>
-</details>
-
-<details>
-<summary>Screenshot of postlikes models.py</summary>
-<img src='docs/validations/post-likes-models-py.png' alt='post likes models validation'>
-</details>
-
-<details>
-<summary>Screenshot of postlikes serializers.py</summary>
-<img src='docs/validations/post-likes-serializers-py.png' alt='post likes serializers validation'>
-</details>
-
-<details>
-<summary>Screenshot of postlikes views.py</summary>
-<img src='docs/validations/post-likes-views-py.png' alt='post likes views validation'>
-</details>
-
-<details>
-<summary>Screenshot of commentlikes models.py</summary>
-<img src='docs/validations/comment-likes-models-py.png' alt='comment likes models validation'>
-</details>
-
-<details>
-<summary>Screenshot of commentlikes serializers.py</summary>
-<img src='docs/validations/comment-likes-serializers-py.png' alt='comment likes serializers validation'>
-</details>
-
-<details>
-<summary>Screenshot of commentlikes views.py</summary>
-<img src='docs/validations/comment-likes-views-py.png' alt='comment likes views validation'>
-</details>
-
-<details>
-<summary>Screenshot of comments models.py</summary>
-<img src='docs/validations/comments-models-py.png' alt='comments models validation'>
-</details>
-
-<details>
-<summary>Screenshot of comments serializers.py</summary>
-<img src='docs/validations/comments-serializers-py.png' alt='comments serializers validation'>
-</details>
-
-<details>
-<summary>Screenshot of comments views.py</summary>
-<img src='docs/validations/comments-views-py.png' alt='comments views validation'>
-</details>
-
-<details>
-<summary>Screenshot of followers models.py</summary>
-<img src='docs/validations/followers-models-py.png' alt='followers models validation'>
-</details>
-
-<details>
-<summary>Screenshot of followers serializers.py</summary>
-<img src='docs/validations/followers-serializers-py.png' alt='followers serializers validation'>
-</details>
-
-<details>
-<summary>Screenshot of followers views.py</summary>
-<img src='docs/validations/followers-views-py.png' alt='followers views validation'>
-</details>
-
-<details>
-<summary>Screenshot of profiles models.py</summary>
-<img src='docs/validations/profiles-models-py.png' alt='profiles models validation'>
-</details>
-
-<details>
-<summary>Screenshot of profiles serializers.py</summary>
-<img src='docs/validations/profiles-serializers-py.png' alt='profiles serializers validation'>
-</details>
-
-<details>
-<summary>Screenshot of profiles views.py</summary>
-<img src='docs/validations/profiles-views-py.png' alt='profiles views validation'>
-</details>
-
 
 ### W3C Validator 
 
