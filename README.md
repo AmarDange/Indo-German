@@ -1,4 +1,4 @@
-# Welcome to **[Indo German (PP5)](https://indo-german-pp5-e488026ec98b.herokuapp.com/)**
+# [Indo German (PP5)](https://indo-german-932e214b60bd.herokuapp.com/)
 
 ## PERSPECTIVE
 
@@ -19,41 +19,68 @@ The main motive is to provide information about eduation, Places to visit, food,
 
 
 ## [Contents](#contents)
-- [User Experience (UX)](#user-experience-ux)
-	- [Site Goals](#site-goals)
-	- [Scope](#scope)
-    - [Epics and User Stories](<#epics-and-user-stories>)
-	    - [Website UI](#website-ui)
-        - [Authentication](#authentication)
-        - [Navigation](#navigation)
-		- [General](#general)
-		- [Post Management](#post-management)
-        - [Comment Management](#comment-management)
-        - [Likes Management](#likes-management)
-        - [Profile Management](#profile-management)
-    - [Agile Development](#agile-development)
-        - [Kanban Board and MosCow Prioritization](#kanban-board-and-moscow-prioritization)
-        - [Outline of Sprints](<#outline-of-sprints>)
-    - [Acceptance Criteria](<#acceptance-criteria>)
-	- [Tasks](<#tasks>)
-- [Design](<#design>)
-	- [Colours](<#colours>)
-	- [Typography](<#typography>)
-	- [Imagery](<#imagery>)
-	- [Wireframes](<#wireframes>)
-- [Features](<#features>)
-- [Component](<#component>)
-- [Technologies](<#technologies>)
-	- [Languages Used](<#languages-used>)
-	- [Tools](<tools>)
-	- [Frameworks, Libraries and Programs](<#frameworks-libraries-and-programs>)
-- [Production](#production)
-- [Issues and Fixes](<#issues-and-fixes>)
-- [Testing](<#testing>)
-- [Deployment](<#deployment>)
-	- [Heroku](<#heroku>)
-- [Credits and Resources](<#credits-and-resources>)
-- [Acknowledgements](<#acknowledgements>)
+- [Indo German (PP5)](#indo-german-pp5)
+  - [PERSPECTIVE](#perspective)
+  - [Deployed Link](#deployed-link)
+  - [GitHub Link](#github-link)
+  - [Contents](#contents)
+  - [User Experience (UX)](#user-experience-ux)
+    - [Site Goals](#site-goals)
+    - [Scope](#scope)
+  - [Epics and User Stories](#epics-and-user-stories)
+    - [1. Website UI](#1-website-ui)
+    - [2. Authentication](#2-authentication)
+    - [3. Navigation](#3-navigation)
+    - [4. General](#4-general)
+    - [5. Post Management](#5-post-management)
+    - [6. Comment Management](#6-comment-management)
+    - [7. Likes Management](#7-likes-management)
+    - [8. Profile Management](#8-profile-management)
+  - [Agile Development](#agile-development)
+    - [Kanban Board and MosCow Prioritization](#kanban-board-and-moscow-prioritization)
+    - [Outline of Sprints](#outline-of-sprints)
+      - [Sprint 1 - Project Setup](#sprint-1---project-setup)
+      - [Sprint 2 - Making a Post](#sprint-2---making-a-post)
+      - [Sprint 3 - Likes, Comments and Profile page](#sprint-3---likes-comments-and-profile-page)
+      - [Sprint 4 - General feature, styling and deployment](#sprint-4---general-feature-styling-and-deployment)
+    - [Tasks](#tasks)
+  - [Design](#design)
+    - [Colours](#colours)
+    - [Typography](#typography)
+    - [Imagery](#imagery)
+    - [Wireframes](#wireframes)
+  - [Features](#features)
+    - [Existing Features](#existing-features)
+    - [NavBar](#navbar)
+    - [Sign Up Link and Form](#sign-up-link-and-form)
+    - [Sign In Link and Form](#sign-in-link-and-form)
+    - [Post Section (Home)](#post-section-home)
+    - [Left panel](#left-panel)
+    - [Search Feature](#search-feature)
+    - [Popular Profiles](#popular-profiles)
+    - [Feed page](#feed-page)
+    - [Liked page](#liked-page)
+    - [Comments Section](#comments-section)
+    - [Post Create Form](#post-create-form)
+    - [Post Edit Form](#post-edit-form)
+    - [Like](#like)
+    - [Post Detail Page](#post-detail-page)
+    - [Profile Page](#profile-page)
+    - [Delete modal and Alert message](#delete-modal-and-alert-message)
+  - [Components](#components)
+  - [Technologies](#technologies)
+    - [Languages Used](#languages-used)
+    - [Tools](#tools)
+    - [Frameworks, Libraries and Programs](#frameworks-libraries-and-programs)
+  - [Production](#production)
+  - [Issues and Fixes](#issues-and-fixes)
+  - [Testing](#testing)
+  - [Deployment](#deployment)
+    - [Heroku](#heroku)
+    - [Connecting to API](#connecting-to-api)
+    - [Final Deployment](#final-deployment)
+  - [Credits and Resources](#credits-and-resources)
+  - [Acknowledgements](#acknowledgements)
 
 
 ## User Experience (UX)
@@ -91,7 +118,7 @@ The main motive is to provide information about eduation, Places to visit, food,
 	1. Latest entries feature on top or first
 	2. Click on post to view post details 
 	3. Ability to comment and like a posts
-    	4. Ability to like a comment
+    4. Ability to like a comment
 	5. Create, Edit and Delete own post and comment.
 
 - Profiles Features
@@ -256,10 +283,10 @@ I used a kanban board to help organize the user stories and tasks required for t
 
 <details>
 <summary>Screenshot of Kanban Board Part 1</summary>
-<img src='docs/agile/US1.JPG' alt='kanban board part 1'>
-<img src='docs/agile/US2.JPG' alt='kanban board part 2'>
-<img src='docs/agile/US3.JPG' alt='kanban board part 3'>
-<img src='docs/agile/US4.JPG' alt='kanban board part 4'>
+<img src='frontend/docs/agile/userstory1.PNG' alt='kanban board part 1'>
+<img src='frontend/docs/agile/userstory2.PNG' alt='kanban board part 2'>
+<img src='frontend/docs/agile/userstory3.PNG' alt='kanban board part 3'>
+<img src='frontend/docs/agile/userstory4.PNG' alt='kanban board part 4'>
 </details>
 
 ### Outline of Sprints
@@ -326,7 +353,7 @@ The tasks that I have followed during the development phase were carried out in 
 **Before Project Inception**
 
 - Design Entity Relationship Diagram
-- Set up and create  Back End API. For this backend was built using the Django Rest API framework. All information can be found in [Indo German Back End](https://github.com/AmarDange/Indo-German)
+- Set up and create  Back End API. For this backend was built using the Django Rest API framework. All information can be found in [Indo German ](https://github.com/AmarDange/Indo-German)
 - Create Project, Epics, User Stories and prepare Kanban Board
 
 **Creation of Project in Codeanywhere**
@@ -336,6 +363,7 @@ The tasks that I have followed during the development phase were carried out in 
 - Coding
 - Testing
 - Create Frontend Repository in GitHub
+- Combining existing DRF and React projects into the same workspace
 
 **Future Tasks**
 There are so many feaures I wish to build upon. But due to severe time constraints, the App is in it's basic form. Few features, I would've liked to have are:
@@ -354,7 +382,7 @@ There are so many feaures I wish to build upon. But due to severe time constrain
 The colour scheme has considered based on easy accessibility for all.
 Complimentarity was key feature in color selection, to give it a pleasant feel for all age groups.
 The palette was generated with inspiration from palettes provided by [Coolers](https://coolors.co/). The color palette used is as shown below.
-![Color Palette](documentation/color-palette.png)
+![Color Palette](frontend/docs/colorpalette.JPG)
 
 ### Typography
 
@@ -367,9 +395,9 @@ The imagery on the website has been seleced according to the post requirement. M
 ### Wireframes
 
 The wireframes were generated using Balsamiq. The wireframes can be found in these links:<br>
-[Wireframes for Desktop](documentation/wireframes/Desktop-wireframes.pdf)<br>
-[Wireframes for Tablet](documentation/wireframes/Tablet-Wireframes.pdf)<br>
-[Wireframes for Mobile](documentation/wireframes/Mobile-wireframes.pdf)
+[Wireframes for Desktop](frontend/docs/wireframe/Wireframe-Desktop.pdf)<br>
+[Wireframes for Tablet](frontend/docs/wireframe/Wireframe-Tablet.pdf)<br>
+[Wireframes for Mobile](frontend/docs/wireframe/Wireframe-Mobile.pdf)
 
 [Back to top ⇧](#contents)
 
@@ -391,37 +419,21 @@ The wireframes were generated using Balsamiq. The wireframes can be found in the
 As shown here:
 ![Landing Page](documentation/features/landing-page.png)
 
-**Home Page**
+### NavBar
 
-- At the very first glimpse after sign in, user can see a Home Page with Navigation menu with a search button and posts, left and right panel on the homepage.
-- Homepage provides the user with some quick information about the site and make use of all its features.
-- User do not need to be registered to view a blog post. The responsive navigation bar is featured on all pages.
-
-<details>
-<summary>Home Page</summary>
-<img src='docs/features/homepage.JPG'>
-</details>
-
-**Navigation Bar**
-
-- The navigation bar is created with React Bootstrap. Conditional rendering is used to display different links depending on if the user is logged-in or not. Depending on the logged in status, different links will appear.
-- When the user is logged out, the user will see the option to log in, signup, and to read the 'About' of the website.
-- When the user logs in, the user is able to see their username at the top of the screen (when clicking on it, user will be directed to their detailed page where they can edit their details), the option to go to 'Feed' (see all posts by their followed users) and log out.
-- The navigation bar is fixed at the top so it will always remain readily available when users scroll down the website.
-- The pages are wired using React Router Dom so the navigation process is extremely quick.
-- The active link will be blue in contrast to the other links so the user knows exactly which page they are on.
-- The navigation bar is fully responsive as it collapses into a hamburger icon on smaller screens.
-- Users can easily log out of the website by clicking the 'Log Out' link that appears when users are signed in. T
-
-<details>
-<summary>Navigation Bar on landing Page</summary>
-<img src='docs/features/landingpagenavbar.JPG'>
-</details>
-
-<details>
-<summary>Navigation Bar on Home Page</summary>
-<img src='docs/features/navbar.JPG'>
-</details>
+- Featured and consistent on the all pages
+- Two variants of the navbar:
+  - New or not logged-in users will see the About, Sign up and Sign in icons, as shown in ![NavBar Logged out](documentation/features/logged-out-navbar.png)
+    - NavLink that links to the about page, allowing users to know more about website
+    - NavLink that links to the log in page, allowing users to log in
+    - NavLink that links to the sign up page, allowing users to create an account
+  - For logged in user it shows Home, About, Feed and Liked, Sign Out and Profile Nav items. As shown in ![NavBar logged in](documentation/features/logged-in-navbar.png)
+    - NavLink that links to the home page, displaying all posts of the users the logged in user follows
+    - NavLink that links to the about page, displaying more information about website
+    - NavLink that links to the liked page, displaying only the posts a user has liked
+    - NavLink that signs the user out
+    - NavLink that links to the profile page, display information about logged in user
+- The NavBar is fully responsive and changes to a toggler (hamburger menu) on smaller size screens.
 
 **About Page**
 
@@ -430,47 +442,21 @@ As shown here:
 - Users will be reminded of the functionality of the website such as the capability of being able to edit/delete posts and comments, not being able to like to their own posts/comments, the character limit of titles and content, etc.
 - All of the information a new user or returning user would possibly need will be found on this page.
 
-<details>
-<summary>About Page</summary>
-<img src='docs/features/aboutpage.JPG'>
-</details>
-
-### Feed page
-
-- Contains all posts of users that the logged in user follows
-- The posts are displayed in a single list, styled as cards for clean separation between posts.
-- Each post includes a title, description and image, along with Like and Comments icons showing number they received.
-- Clicking on heart icon adds a like to the post.
-- Clicking on comments icon takes user to the selected post's detail page which displays all the comments the post recieved.
-- Enabled with infinite scroll feature.
-
-<details>
-<summary>Feed Page</summary>
-<img src='docs/features/feedpage.JPG'>
-</details>
+As shown here:
+![About Page](documentation/features/landing-page.png)
 
 ### Sign Up Link and Form
 
 - Allows users to create an account
 - Users must provide a valid username and enter their preferred password twice for confirmation
-As shown on link provided:
-
-<details>
-<summary>Sign Up</summary>
-<img src='docs/features/signup.JPG'>
-</details>
+As shown on link provided: ![Sign Up](documentation/features/signup-page.png)
 
 ### Sign In Link and Form
 
 - Allows registered users to login to their account
 - Both the username and password have to be correct to be signed in
 - Displays errors if the username or password is wrong or the input is invalid
-As shown on link provided:
-
-<details>
-<summary>Sign In</summary>
-<img src='docs/features/signin.JPG'>
-</details>
+As shown on link provided: ![Sign In](documentation/features/signin-page.png)
 
 ### Post Section (Home)
 
@@ -479,22 +465,38 @@ As shown on link provided:
 - Each post includes a title, description and image, along with Like and Comments icons showing number they received.
 - Clicking on heart icon adds a like to the post.
 - Clicking on comments icon takes user to the post detail page which displays all the comments the post recieved.
-
-<details>
-<summary>Post Section</summary>
-<img src='docs/features/postsectionhome.JPG'>
-</details>
+![Post Section](documentation/features/home-page.png)
 
 ### Left panel
 
 - User can see liked posts by selecting a badge
 - user can create new post.
 - User can open own profile to edit in new window
+![Left Panel](documentation/features/home-page.png)
 
-<details>
-<summary>Left panel</summary>
-<img src='docs/features/leftpanel.JPG'>
-</details>
+### Search Feature
+
+- By typing a query in the search bar users can find a specific post they are looking for
+- Allows to search through all post title, word or author name
+
+![Search Bar](documentation/features/search-bar.png)
+
+### Popular Profiles
+
+- Reusable component shows 10 most followed profiles in large devices in right column.
+- It shows first four most followed profiles in the app in medium to small devices.
+- The component displays user avatar, name and follow/unfollow button.
+  - - Users are able to follow a specific profile they like and then be able to easily view their posts in the Feed.
+![Popular Profiles](documentation/features/profile-panel.png)
+
+### Feed page
+
+- Contains all posts of users that the logged in user follows
+- The posts are displayed in a single list, styled as cards for clean separation between posts.
+- Each post includes a title, description and image, along with Like and Comments icons showing number they received.
+- Clicking on heart icon adds a like to the post.
+- Clicking on comments icon takes user to the slected post's detail page which displays all the comments the post recieved.
+- Enabled with infinite scroll feature.
 
 ### Liked page
 
@@ -505,32 +507,6 @@ As shown on link provided:
 - Clicking on comments icon takes user to the slected post's detail page which displays all the comments the post recieved.
 - Enabled with infinite scroll feature.
 
-<details>
-<summary>Liked Page</summary>
-<img src='docs/features/likedpage.JPG'>
-</details>
-
-### Search Feature
-
-- By typing a query in the search bar users can find a specific post they are looking for
-- Allows to search through all post title, word or author name
-
-<details>
-<summary>Search Bar</summary>
-<img src='docs/features/searchbar.JPG'>
-</details>
-
-### Popular Profiles
-
-- Reusable component shows 10 most followed profiles in large devices in right column.
-- It shows first four most followed profiles in the app in medium to small devices.
-- The component displays user avatar, name and follow/unfollow button.
-    - - Users are able to follow a specific profile they like and then be able to easily view their posts in the Feed.
-
-<details>
-<summary>Popular Profiles</summary>
-<img src='docs/features/popularprofile.JPG'>
-</details>
 
 ### Comments Section
 
@@ -541,32 +517,20 @@ As shown on link provided:
 - Displays the date the comment was posted or edited.
 - All comments can be read by all other users.
 - Editing of other users' comments is not allowed as dropdown menu will not be visible.
-
-<details>
-<summary>Comments Section</summary>
-<img src='docs/features/commentsection.JPG'>
-</details>
+![Comments Section](documentation/features/comment-section.png)
 
 ### Post Create Form
 
 - Logged in user can access the CURD functionality for post.
-- Post create form contains title, left panel, description and image fields that they can fill and update.
-
-<details>
-<summary>Post Create Form</summary>
-<img src='docs/features/postcreate.JPG'>
-</details>
+- Post create form contains title, category, description and image fields that they can fill and update.
+![Post Create Form](documentation/features/post-create-form.png)
 
 ### Post Edit Form
 
 - Can only be accessed from the post details page by clicking the dropdown menu that can be seen only if the logged in user is the owner of the post as shown
-- Contains title, leftpanel, description and image fields that they can fill and update.
+- Contains title, category, description and image fields that they can fill and update.
 - They will be redirected to Post Details page.
-
-<details>
-<summary>Post Edit Form</summary>
-<img src='docs/features/editpage.JPG'>
-</details>
+![Post Edit Form](documentation/features/edit-post.png)
 
 ### Like
 
@@ -574,26 +538,31 @@ As shown on link provided:
 - A logged in user can unlike post if they are not interested in it
 - The liked post will appear in "Liked" page
 - The number the likes recieved by the post can be seen on each page.
-
-<details>
-<summary>Like</summary>
-<img src='docs/features/like.JPG'>
-</details>
+![Like](documentation/features/like-unlike.png)
 
 ### Post Detail Page
 
-- Contains details of a single post - image, title, description (if provided by the user).
+- Contains details of a single post - image, title, description (if provided by the user) and its category tag
 - Contains number of likes and comments the post has
 - Contains like icon to allow user to like the post
 - Features comments section below the post.
 - Comments add field will be visible to the users.
 - Contains a dropdown menu on the post to allow the owner to edit or delete the post
 The Post Detail page looks like as shown below:
+![Post Detail Page](documentation/features/post-detail-page.png)
 
-<details>
-<summary>Post Detail Page</summary>
-<img src='docs/features/postdetailpage.JPG'>
-</details>
+### Profile Page
+
+- Logged in user can click either avatar from NavBar or from popular profiles panel to navigate to pofile page, where he can update his/her profile info. Also they can see number of post, number of followers, number of following and list of post posted by user so far.
+The Post Detail page looks like as shown below:
+![Profile Page](documentation/features/profile-page.png)
+
+### Delete modal and Alert message
+
+- A delete modal is displayed asking the user for confirmation to delete a post or comment.
+  ![Delete Modal](documentation/features/delete-modal.png))
+
+
 
 ## Components
 
