@@ -24,7 +24,11 @@ The main motive is to provide information about eduation, Places to visit, food,
   - [Deployed Link](#deployed-link)
   - [GitHub Link](#github-link)
   - [Contents](#contents)
-  - [User Experience (UX)](#user-experience-ux)
+  - [User Experience DRF Backend (UX)](#user-experience-drf-backend-ux)
+    - [Project Structure](#project-structure)
+    - [User Stories](#user-stories)
+    - [Database Model](#database-model)
+  - [User Experience React Frontend (UX)](#user-experience-react-frontend-ux)
     - [Site Goals](#site-goals)
     - [Scope](#scope)
   - [Epics and User Stories](#epics-and-user-stories)
@@ -83,7 +87,128 @@ The main motive is to provide information about eduation, Places to visit, food,
   - [Acknowledgements](#acknowledgements)
 
 
-## User Experience (UX)
+## User Experience DRF Backend (UX)
+
+### Project Structure
+
+The overall structure of the project was modelled from from the [drf-api](https://github.com/Code-Institute-Solutions/drf-api) walktrhough. This is to be expected since the walkthrough follows an insdustry standard way of implementing an API. In addition, the strucutre of the serializer, model, and url files are also adapted from the walkthrough since this is the "pythonic" way of implementing an API using the Django REST framework.
+
+### User Stories
+
+- Authentication
+
+  1. As a **user** I **cannot edit/delete posts/comments/likes that are not mine** so that **I can be assured that my posts/comments/likes are protected and can only be changed by me.**
+
+     - This user story is achieved by creating custom permissions that will stop users from deleting, editing, unliking/liking posts/comments that are not done by themselves.
+
+  2. As a **user** I can **see whether I am logged in or not** so that **I will know if I will need to log in if I am not.**
+
+     - This user story is achieved by showing the username created in Profile after the user signs up and logs in using Django's all-auth.
+
+  3. As a **user** I can **sign up easily with just a username and password** so that **I have the ability to create posts or comments without having to share my email address.**
+
+     - This user story is achieved by using Django's all-auth.
+
+  4. As a **user** I can **easily log out** so that **I can have more security on my account.**
+
+     - This user story is achieved by using Django's all-auth.
+
+  5. As a **user** I can **easily log in** so that **I can quickly post, add more comments, or delete content if I wish.**
+
+     - This user story is achieved by using Django's all-auth.
+
+  6. As a **user** I can **only like/unlike other users' posts and comments** so that **I can only show my appreciation for other posts/comments and not cheat the system by liking my own posts/comments.**
+
+     - This user story is achieved by creating the Comment Likes and Post Likes models to like other user's content. Custom permissions are created to allow users to only like other users' posts/comments.
+
+  7. As a **user** I can **only follow other users** so that **I cannot cheat the system and follow myself and gain myself a new, false follower.**
+
+     - This user story is achieved by creating the Follower model to follow other users. A custom permission is created to stop users from following themselves.
+
+- Posts
+
+  1. As a **user** I can **create new posts** so that **I can share images, my experience.**
+
+     - This user story is achieved by creating the Post model. Users can add images, content, category and a title to posts.
+
+  2. As a **user** I can **edit posts** so that **I can change my posts, images, etc whenever I change my mind about what I posted or wish to remove/add details.**
+
+     - This user story is achieved by using generics. RetrieveUpdateDestroyAPIView in Post views. Users are able to edit their posts.
+
+  3. As a **user** I can **delete my posts** so that **I can get rid of my posts that I no longer want to be shared.**
+
+     - This user story is achieved by using generics. RetrieveUpdateDestroyAPIView in Post views. Users are able to delete their posts.
+
+  4. As a **user** I can **view the details of a post** so that **I can read more information about the post such as when it was created, who created it, if it was edited, read the comments, etc.**
+
+     - This user story is achieved by using generics. RetrieveUpdateDestroyAPIView in Post views. Users are able to see the detailed information about a post such as who created it, when it was created/edited, if there are comments, etc.
+
+  5. As a **user** I can **like posts** so that **I can share my appreciation for the post and show the world and the author that their post is great.**
+
+     - This user story is achieved using the Post likes model. Users are able to like to user posts.
+
+  6. As a **user** I can **remove likes on a post** so that **I can change my mind about whether I like the post or not.**
+
+     - This user story is achieved using generics. RetrieveDestroyAPIView in Post Like views. Users are able to remove their likes on a post.
+
+- Comments
+
+  1. As a **user** I can **post a comment on a post** so that **I can contribute discussion to a post or share my thoughts about a post.**
+
+     - This user story is achieved using the Comment model. Users are able to add comments on posts.
+
+  2. As a **user** I can **delete my comments on a post** so that **I can remove comments if I no longer want my comments to be public.**
+
+     - This user story is achieved using generics. RetrieveUpdateDestroyAPIView in Comment views. Users are able to delete their comments.
+
+  3. As a **user** I can **read comments on a post** so that **I can read what others think about the post and read the discussion happening.**
+
+     - This user story is achieved using generics. ListCreateAPIView in Comment views. Users are able to read the list of comments on a post.
+
+  4. As a **user** I can **edit my comments** so that **have the possibility to remove or add more details to my existing comments.**
+
+     - This user story is achieved using generics.RetrieveUpdateDestroyAPIView in Comment views. Users are able to edit their comments.
+
+  5. As a **user** I can **like comments** so that **I can share my appreciation for the comment.**
+
+     - This user story is achieved by creating the Comment Likes model. Users are able to like to other users' comments.
+
+  6. As a **user** I can **unlike comments** so that **I can change my mind about my positive feelings towards a comment.**
+
+     - This user story is achieved using generics. RetrieveDestroyAPIView in Comment Likes views. Users are able to remove their likes on a post.
+
+- Profile
+
+  1. As a **user** I can **follow or unfollow other users** so that **I can see or choose to remove posts by specific users in my posts feed.**
+
+     - This user story is achieved using the Follower model. Users are able 2. As a **user** I can **view a detailed page of users** so that **I can see their posts and learn more about the user. I can also see their following count, followers count, etc.**
+
+     - This user story is achieved using the Profile views. Users are able to see posts tied to a user, including their following count and followers count.
+
+  3. As a **user** I can **view user avatars** so that **easily identify users of the website.**
+
+     - This user story is achieved by the Profile model, allowing users to view profile images/avatars of other users.
+
+- Searching
+
+  1. As a **user** I can **search for posts or users by typing in text in the search bar** so that **I can easily find posts or users with a few keyboard taps.**
+
+     - This user story is achieved in Post views where custom filterset fields, search fields, and ordering fields are implemented to allow users to search for posts based on content, title, and author.
+
+- Filtering
+
+  1. As a **user** I can **easily filter information based on different circumstances** so that **I can easily find information via a simple filtering method such as who is following who, what posts a user liked, etc.**
+
+     - This user story is achieved by creating custom filterset fields in Post views, Comment views, Profile views, etc. However, users will not be able to see who is following who, they can see how many followers a user has or how many they are following.
+
+### Database Model
+
+- Database model has been created using Lucid Chart.
+
+![Screenshot of database model](frontend/docs/features/database-erd.pngdocumentation/images/database-erd.png)
+
+
+## User Experience React Frontend (UX)
 
 ### Site Goals
 
@@ -608,6 +733,7 @@ A number of the components created are reusable and were used across the website
 
     
 ### Languages Used
+
 - [CSS](https://en.wikipedia.org/wiki/CSS)
 - [HTML5](https://en.wikipedia.org/wiki/HTML5)
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
@@ -623,15 +749,19 @@ A number of the components created are reusable and were used across the website
 - [Favicon.io](https://favicon.io) - to generate the site favicon
 - [Font Awesome](https://fontawesome.com/) - Icons from Font Awesome, used in NavBar and create buttons, like and comment icons
 - [Google Fonts](https://fonts.google.com/) - import font
+- [Lucid Chart](https://www.lucidchart.com/) - Lucid Chart was used to create the data model for the back end.
+- [Cloudinary](https://cloudinary.com/) - Cloudinary is used to host the uploaded images.
 - [Git](https://git-scm.com/) - for version control within VSCode to push the code to GitHub
 - [GitHub](https://github.com/) - for remote repository to store project code
 - [Gitpod](https://gitpod.io) - to host a virtual workspace
 - [Heroku](https://dashboard.heroku.com/login)
 - [ElephantSQL](https://www.elephantsql.com/)
+- [Pillow](https://pypi.org/project/Pillow/9.2.0/) - Python Imaging Library which provides image processing capabilities.
 - Validation:
   - [W3C Validator](https://validator.w3.org/) was used to validate the html
   - [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/) was used to validate the css
   - [ESLint](https://eslint.org/) used to validate JSX code
+  - [CI Python Linter](https://pep8ci.herokuapp.com/) - CI Python Linter was used to validate the Python code used and check for warnings/errors.
 
 ### Frameworks, Libraries and Programs
 
@@ -720,6 +850,12 @@ web: serve -s build
 
 ## Credits and Resources
 
+- [Code Institute DRF API Example Project](https://github.com/Code-Institute-Solutions/drf-api)
+  This API was built using Django REST Framework. Most of code is inspired by Code Institute's DRF API example project, including the database model, the different features and functionality of the API, creating serializers, setting up the project, setting up filters and search fields, etc. I decided to use the base of whole project on this API since it was a great fit for the application I had planned and it provides a great foundation to expand upon.
+
+- [Django REST Framework Documentation](https://www.django-rest-framework.org/)
+  The official Django REST Framework documentation was referred to many times while creating this project.
+
 - [Code Institute Moments Project](Solutions)
     - Functionality of the project credit goes to Code Institute. Comments are made along the project of where code is used from Code Institute's Moments project. 
 
@@ -739,5 +875,7 @@ web: serve -s build
 - Thank you to Tutor Support for always being there for me, and always being patient with my questions.
 
 - Thank you to CI Slack Channel for taking time out of their day to answer my questions.
+
+- Stack Overflow for tips, tricks and solutions to fix errors.
 
 [Back to top ⇧](#contents)
