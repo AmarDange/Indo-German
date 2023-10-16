@@ -5,7 +5,7 @@
 The main reason behind this website is to help or provide information to immigrants in Germnay or India.
 The main motive is to provide information about eduation, Places to visit, food, Visa. The attempt of the project is to create a social media App to connect people who wish to help others who are coming to germany or india. Some base points are shared on this App where people get basic idea from India and germany.
 
-**Indo-German** is a social-media app designed to mimic the features of Twitter. Users can create an account, log in, make a post, make comments on posts, like other user's posts and comments, and change their profile photo and profile biography. This website is designed to allow users to make posts about incomparable suggetion/information as an expat, tourist and be able to engage with other users by commenting and liking on other posts/comments. This is the combined repository for the React frontend of Indo Germa and backend drf, created with HTML, CSS, Bootstrap, React. Components were reused throughout the React project as each part of the website was broken into individual components and linked together, transferring states and data. The project also utilises a Django Rest Framework web API.
+**Indo-German** is a social-media app designed to mimic the features of Twitter. Users can create an account, log in, make a post, make comments on posts, like other user's posts and comments, and change their profile photo and profile biography. This website is designed to allow users to make posts about incomparable suggetion/information as an expat, tourist and be able to engage with other users by commenting and liking on other posts/comments. This is the combined repository for the React frontend of Indo German and backend DRF, created with HTML, CSS, Bootstrap, React. Components were reused throughout the React project as each part of the website was broken into individual components and linked together, transferring states and data. The project also utilises a Django Rest Framework web API.
 
 ![Screenshot of Am I Responsive](frontend/docs/features/amiresponsive.PNG)
 
@@ -17,8 +17,8 @@ The main motive is to provide information about eduation, Places to visit, food,
 
 - [GitHub Link](https://github.com/AmarDange/Indo-German)
 
-
 ## [Contents](#contents)
+
 - [Indo German (PP5)](#indo-german-pp5)
   - [PERSPECTIVE](#perspective)
   - [Deployed Link](#deployed-link)
@@ -86,12 +86,11 @@ The main motive is to provide information about eduation, Places to visit, food,
   - [Credits and Resources](#credits-and-resources)
   - [Acknowledgements](#acknowledgements)
 
-
 ## User Experience DRF Backend (UX)
 
 ### Project Structure
 
-The overall structure of the project was modelled from from the [drf-api](https://github.com/Code-Institute-Solutions/drf-api) walktrhough. This is to be expected since the walkthrough follows an insdustry standard way of implementing an API. In addition, the strucutre of the serializer, model, and url files are also adapted from the walkthrough since this is the "pythonic" way of implementing an API using the Django REST framework.
+The overall structure of the project was modelled from from the [drf-api](https://github.com/Code-Institute-Solutions/drf-api) walktrhough. This is to be expected since the walkthrough follows an industry standard way of implementing an API. In addition, the strucutre of the serializer, model, and url files are also adapted from the walkthrough since this is the "pythonic" way of implementing an API using the Django REST framework.
 
 ### User Stories
 
@@ -117,7 +116,7 @@ The overall structure of the project was modelled from from the [drf-api](https:
 
      - This user story is achieved by using Django's all-auth.
 
-  6. As a **user** I can **only like/unlike other users' posts and comments** so that **I can only show my appreciation for other posts/comments and not cheat the system by liking my own posts/comments.**
+  6. As a **user** I can **only like/unlike other user's posts and comments** so that **I can only show my appreciation for other posts/comments and not cheat the system by liking my own posts/comments.**
 
      - This user story is achieved by creating the Comment Likes and Post Likes models to like other user's content. Custom permissions are created to allow users to only like other users' posts/comments.
 
@@ -129,7 +128,8 @@ The overall structure of the project was modelled from from the [drf-api](https:
 
   1. As a **user** I can **create new posts** so that **I can share images, my experience.**
 
-     - This user story is achieved by creating the Post model. Users can add images, content, category and a title to posts.
+     - This user story is achieved by creating the Post model. Users can add images, content
+     - and a title to posts.
 
   2. As a **user** I can **edit posts** so that **I can change my posts, images, etc whenever I change my mind about what I posted or wish to remove/add details.**
 
@@ -181,11 +181,13 @@ The overall structure of the project was modelled from from the [drf-api](https:
 
   1. As a **user** I can **follow or unfollow other users** so that **I can see or choose to remove posts by specific users in my posts feed.**
 
-     - This user story is achieved using the Follower model. Users are able 2. As a **user** I can **view a detailed page of users** so that **I can see their posts and learn more about the user. I can also see their following count, followers count, etc.**
+     - This user story is achieved using the Follower model. Users are able
+
+  2. As a **user** I can **view a detailed page of users** so that **I can see their posts and learn more about the user. I can also see their following count, followers count, etc.**
 
      - This user story is achieved using the Profile views. Users are able to see posts tied to a user, including their following count and followers count.
 
-  3. As a **user** I can **view user avatars** so that **easily identify users of the website.**
+  1. As a **user** I can **view user avatars** so that **easily identify users of the website.**
 
      - This user story is achieved by the Profile model, allowing users to view profile images/avatars of other users.
 
@@ -205,8 +207,7 @@ The overall structure of the project was modelled from from the [drf-api](https:
 
 - Database model has been created using Lucid Chart.
 
-![Screenshot of database model](frontend/docs/features/database-erd.pngdocumentation/images/database-erd.png)
-
+![Screenshot of database model](documentation/images/database-erd.png)
 
 ## User Experience React Frontend (UX)
 
@@ -235,13 +236,13 @@ The overall structure of the project was modelled from from the [drf-api](https:
 	3. Posts list with infinite scroll feature
 	4. Landing page with guidance to sign up/sign in and how to start using the websites features
 	6. Search field to enable user to search a keyword
-	7. Left panel to see liked posts
+	7. Left panel to see liked posts, edit profile
 	8. User's Feed page with posts from their favourite users
 	9. Liked page to enable users to save the posts they liked
 
 - Posts and Comment Features
 	1. Latest entries feature on top or first
-	2. Click on post to view post details 
+	2. Click on post to view post details
 	3. Ability to comment and like a posts
     4. Ability to like a comment
 	5. Create, Edit and Delete own post and comment.
@@ -256,7 +257,7 @@ The overall structure of the project was modelled from from the [drf-api](https:
 
 ## Epics and User Stories
 
-8 Epics were created which were further developed into 34 User Stories.Many of the user stories are worded similarly to the Moments walkthrough project because the functionality is quite similar - especially with navigation and authentication, posts, likes and comments.
+8 Epics were created which were further developed into 34 User Stories. Many of the user stories are worded similarly to the Moments walkthrough project because the functionality is quite similar - especially with navigation and authentication, posts, likes and comments.
 
 ### 1. Website UI
 
@@ -289,14 +290,14 @@ The overall structure of the project was modelled from from the [drf-api](https:
 - As a **site user** I can **easily log out** so that **I can have more security on my account.**
 - As a **site user** I can **maintain my logged-in status until I choose to log out** so that **my user experience is not compromised**
 - As a **site user** I cannot **edit/delete any posts/comments/likes that are not mine** so that **I can be assured that my posts/comments/likes are protected and can only be changed by me.**
-- As a **site user** I can **only like/unlike other users' posts and comments** so that **I can only show my appreciation for other posts/comments and not cheat the system by liking my own posts/comments**
+- As a **site user** I can **only like/unlike other user's posts and comments** so that **I can only show my appreciation for other posts/comments and not cheat the system by liking my own posts/comments**
 - As a **user** I can **only follow other users** so that **I cannot cheat the system and follow myself and gain myself a new, false follower.**
 
 ### 3. Navigation
 
 **Epic Goals for End User**
 
-1. An easy to use navigation 
+1. An easy to use navigation
 2. Home page with posts list with infinite scroll visible to all
 3. Navigation routing
 4. Navigation conditional rendering
@@ -478,7 +479,7 @@ The tasks that I have followed during the development phase were carried out in 
 **Before Project Inception**
 
 - Design Entity Relationship Diagram
-- Set up and create  Back End API. For this backend was built using the Django Rest API framework. All information can be found in [Indo German ](https://github.com/AmarDange/Indo-German)
+- Set up and create  Back End API. For this backend was built using the Django Rest API framework. All information can be found in [Indo German](https://github.com/AmarDange/Indo-German)
 - Create Project, Epics, User Stories and prepare Kanban Board
 
 **Creation of Project in Codeanywhere**
@@ -548,14 +549,13 @@ As shown here:
 
 - Featured and consistent on the all pages
 - Two variants of the navbar:
-  - New or not logged-in users will see the About, Sign up and Sign in icons, as shown in ![NavBar Logged out](frontend/docs/features/Navbar-at-start.PNG)
-    - NavLink that links to the about page, allowing users to know more about website
-    - NavLink that links to the log in page, allowing users to log in
+  - New or not logged-in users will see the Sign up and Sign in icons, as shown in ![NavBar Logged out](frontend/docs/features/Navbar-at-start.PNG)
+
+    - NavLink that links to the Sign in page, allowing users to Sign in
     - NavLink that links to the sign up page, allowing users to create an account
   - For logged in user it shows Home, About, Feed and Liked, Sign Out and Profile Nav items. As shown in ![NavBar logged in](frontend/docs/features/Navbar-after-signin.PNG)
     - NavLink that links to the home page, displaying all posts of the users the logged in user follows
     - NavLink that links to the about page, displaying more information about website
-    - NavLink that links to the liked page, displaying only the posts a user has liked
     - NavLink that signs the user out
     - NavLink that links to the profile page, display information about logged in user
 - The NavBar is fully responsive and changes to a toggler (hamburger menu) on smaller size screens.
@@ -613,7 +613,7 @@ As shown on link provided: ![Sign In](frontend/docs/features/signin.PNG)
 - It shows first four most followed profiles in the app in medium to small devices.
 - The component displays user avatar, name and follow/unfollow button.
 - Users are able to follow a specific profile they like and then be able to easily view their posts in the Feed.
-    
+
     ![Popular Profiles](frontend/docs/features/popularprofile.PNG)
 
 ### Feed page
@@ -633,7 +633,6 @@ As shown on link provided: ![Sign In](frontend/docs/features/signin.PNG)
 - Clicking on heart icon adds a like to the post.
 - Clicking on comments icon takes user to the slected post's detail page which displays all the comments the post recieved.
 - Enabled with infinite scroll feature.
-
 
 ### Comments Section
 
@@ -694,7 +693,6 @@ The Post Detail page looks like as shown below:
   
   ![Delete Modal](frontend/docs/features/delet-alert-message.PNG)
 
-
 ## Components
 
 A number of the components created are reusable and were used across the website in multiple pages and sections.
@@ -731,7 +729,6 @@ A number of the components created are reusable and were used across the website
 
 11. [Django-cors-headers](https://pypi.org/project/django-cors-headers/3.13.0/)
 
-    
 ### Languages Used
 
 - [CSS](https://en.wikipedia.org/wiki/CSS)
@@ -803,6 +800,7 @@ Many bugs have occurred during the development of the front end project. Most no
 - Fix: Added CSRF_TRUSTED_ORIGINS to your settings.py file and updated CLIENT_ORIGIN and CLIENT_ORIGIN_DEV in Heroku.
 
 ## Testing
+
 Testing has taken place continuously throughout the development of the project. Each view was tested regularly. When the outcome was not as expected, debugging took place at that point. An exhaustive list of features were checked on different devices and browsers. They were performed and their scrrenshots can be found in the features section on how the distinct features render.
 
 - Link for TESTING.md file:- [Testing Results Here](TESTING.md)
@@ -821,13 +819,13 @@ This application has been deployed from GitHub to Heroku by following the steps 
 6. Click on the 'Deploy' tab and go to 'Deployment Method' and choose GitHub
 7. Navigate to 'App connected to GitHub' and search for the relevant repository
 8. Select the repository you wish to deploy and click 'Connect'
-9. Scroll down to the bottom and then select “Manual deploy”, and choose your repository. 
+9. Scroll down to the bottom and then select “Manual deploy”, and choose your repository.
 10. Wait for your build to complete.
 11. When you see the message “deployed to Heroku” in the build log, click the “open app” button at the top of the page.
 
 ### Connecting to API
 
- - Navigate to the Heroku app for Indo-German project and under the 'Settings' tab add the following config vars: Key: Client_Origin and Key: Client_Origin_Dev 
+- Navigate to the Heroku app for Indo-German project and under the 'Settings' tab add the following config vars: Key: Client_Origin and Key: Client_Origin_Dev
 - Ensure that the trailing '/' of the value of these key is removed from the end of both links and save the config vars.
 - Install the Axios package, and create the supporting axiosDefaults.js file
 
@@ -835,18 +833,21 @@ This application has been deployed from GitHub to Heroku by following the steps 
 
 1. Comment out all the console.log within the codes.
 2. Navigate to package.json and in the scripts section add the following command:
+
 ```
 "heroku-prebuild": "npm install -g serve,"
 ```
+
 3. Add a Procfile to the root of the project with the following:
+
 ```
 web: serve -s build
 ```
+
 4. Git add, commit and push your code
 5. Navigate to Heroku and deploy the project via the deploy button under the 'Deploy' tab
 
 [Back to top ⇧](#contents)
-
 
 ## Credits and Resources
 
@@ -857,16 +858,16 @@ web: serve -s build
   The official Django REST Framework documentation was referred to many times while creating this project.
 
 - [Code Institute Moments Project](Solutions)
-    - Functionality of the project credit goes to Code Institute. Comments are made along the project of where code is used from Code Institute's Moments project. 
+  - Functionality of the project credit goes to Code Institute. Comments are made along the project of where code is used from Code Institute's Moments project.
 
 - [Stack Overflow](https://stackoverflow.com/)
-    - Stack Overflow was referred to many times while trying to debug code. 
+  - Stack Overflow was referred to many times while trying to debug code.
 
 - [JSX Validation](https://gist.github.com/ianmeigh/8e603b91a38d7829d959402bfcf29d3d)
-    - Ian Meigh's tutorial on ESlint was used for ESlint testing.
+  - Ian Meigh's tutorial on ESlint was used for ESlint testing.
 
 - [React Bootstrap](https://react-bootstrap.github.io/)
-    - Components from React Bootstrap were used in the project (Navigation bar, forms, cards, etc).
+  - Components from React Bootstrap were used in the project (Navigation bar, forms, cards, etc).
 
 ## Acknowledgements
 
