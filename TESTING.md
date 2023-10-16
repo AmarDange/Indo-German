@@ -83,7 +83,7 @@ As a site user <br>I can update my own profile <br> so that I can make changes a
    - Posts are successfully able to be filtered by user feed, user-liked posts, and user posts.
    - Posts are successfully able to be ordered based on number of likes, the number of comments, and when the post like was created at.
    - Posts are able to be liked and unliked, and have the number of likes edited accurately.
-   - All urls are working perfectly. Can view all posts when visiting `/posts/`. Can access specific posts in detail view when adding specific post id to url.
+   - All urls are working perfectly. Can view all posts when visiting `api/posts/`. Can access specific posts in detail view when adding specific post id to url.
 
    <details><summary>Screenshot of Posts List </summary>
     <img src='documentation/images/postlist.PNG' alt='Postlist'>
@@ -100,7 +100,7 @@ As a site user <br>I can update my own profile <br> so that I can make changes a
    - Comments associated with a given post are successfully able to be retrieved.
    - Comments are successfully able to be ordered based on number of likes and when the comment like was created at.
    - Comments are able to be liked and unliked, and have the number of likes changed accurately.
-   - All urls are working perfectly. Can view all comments when visiting `/comments/`. Can access specific comments in detail view when adding specific comment id to url.
+   - All urls are working perfectly. Can view all comments when visiting `api/comments/`. Can access specific comments in detail view when adding specific comment id to url.
 
     <details><summary>Screenshot of Comment List </summary>
      <img src='documentation/images/commentlist.PNG' alt='CommentList'>
@@ -116,7 +116,7 @@ As a site user <br>I can update my own profile <br> so that I can make changes a
    - In detail follow view, can see detailed information on the follow.
    - Users are able to successfully unfollow the users that they are following.
    - Users are able to follow themselves in the back end. But in the front-end, conditional rendering will be applied to prevent users from following themselves.
-   - All urls are working perfectly. Can view all followers when visiting `/followers/`. Can access specific followers in detail view when adding specific follower id to url.
+   - All urls are working perfectly. Can view all followers when visiting `api/followers/`. Can access specific followers in detail view when adding specific follower id to url.
 
     <details><summary>Screenshot of Follower List </summary>
      <img src='documentation/images/followerlist.PNG' alt='Follower List'>
@@ -129,7 +129,7 @@ As a site user <br>I can update my own profile <br> so that I can make changes a
    - Users are successfully able to unlike the posts that they have liked.
    - Users are not able to like their own posts or else a permission denied error will be thrown.
    - If users try to like a post they have already liked, the API will throw a duplicate validation error.
-   - All urls are working perfectly. Can view all post likes when visiting `/post_likes/`. Can access specific post likes in detail view when adding specific post likes id to url.
+   - All urls are working perfectly. Can view all post likes when visiting `api/post_likes/`. Can access specific post likes in detail view when adding specific post likes id to url.
 
     <details><summary>Screenshot of Post Likes List </summary>
      <img src='documentation/images/likelist.PNG' alt='Post likes list'>
@@ -142,7 +142,7 @@ As a site user <br>I can update my own profile <br> so that I can make changes a
    - Users are successfully able to unlike the comments that they have liked.
    - Users are not able to like their own comments or else a permission denied error will be thrown.
    - If users try to like a comment they have already liked, the API will throw a duplicate validation error.
-   - All urls are working perfectly. Can view all comment likes when visiting `/comment_likes/`. Can access specific comment likes in detail view when adding specific comment_likes_id to url.
+   - All urls are working perfectly. Can view all comment likes when visiting `api/comment_likes/`. Can access specific comment likes in detail view when adding specific comment_likes_id to url.
 
     <details><summary>Screenshot of Comment Likes List </summary>
      <img src='documentation/images/commentlikelist.PNG' alt='Comment like list'>
