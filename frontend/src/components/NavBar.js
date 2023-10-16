@@ -63,9 +63,9 @@ const NavBar = () => {
                 to={`/profiles/${currentUser?.profile_id}`}
             >
                 <Avatar src={currentUser?.profile_image}
-                    text=""
-                    height={33}
-                /> Hi {currentUser?.username}
+                    text={currentUser && currentUser.username}
+                    height={40}
+                />
             </NavLink>
         </>
     );
