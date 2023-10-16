@@ -473,7 +473,7 @@ Goal: Adjust layout and basic styles for components
 
 ### Tasks
 
-The tasks for the website development process was closely followed as mentioned in CI's Advanced Frontend React module "I Moments" walkthrough project. The task is generally the developers step towards preparing the app.
+The tasks for the website development process was closely followed as mentioned in CI's Advanced Frontend React module "Moments" walkthrough project. The task is generally the developers step towards preparing the app.
 The tasks that I have followed during the development phase were carried out in this order.
 
 **Before Project Inception**
@@ -549,11 +549,11 @@ As shown here:
 
 - Featured and consistent on the all pages
 - Two variants of the navbar:
-  - New or not logged-in users will see the Sign up and Sign in icons, as shown in ![NavBar Logged out](frontend/docs/features/Navbar-at-start.PNG)
+  - New or not logged-in users will see the Sign up and Sign in icons, as shown in below image ![NavBar Logged out](frontend/docs/features/Navbar-at-start.PNG)
 
     - NavLink that links to the Sign in page, allowing users to Sign in
     - NavLink that links to the sign up page, allowing users to create an account
-  - For logged in user it shows Home, About, Feed and Liked, Sign Out and Profile Nav items. As shown in ![NavBar logged in](frontend/docs/features/Navbar-after-signin.PNG)
+  - For logged in user it shows Home, About, Feed and Liked, Sign Out and Profile Nav items. As shown in below image ![NavBar logged in](frontend/docs/features/Navbar-after-signin.PNG)
     - NavLink that links to the home page, displaying all posts of the users the logged in user follows
     - NavLink that links to the about page, displaying more information about website
     - NavLink that signs the user out

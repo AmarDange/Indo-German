@@ -484,13 +484,14 @@ The sections below presents an exhaustive list of manual tests done.
 
 The [W3C Markup Validation Service](https://validator.w3.org/) was used to validate the HTML of the website. No errors were identified. 
 Result is as shown here.
-![HTML Validation](documentation/validation/html-validation.png)
+![HTML Validation](frontend/docs/w3cvalidator_html.PNG)
 
 ### W3C Jigsaw Validator 
 
 The official W3C Markup Validator was used to validate the CSS in the project.
 
-[W3C CSS Jigsaw Validatior](https://jigsaw.w3.org/css-validator/validator)
+[W3C CSS Jigsaw Validatior](frontend/docs/appcss_jigsaw_validator.PNG)
+[W3C CSS Jigsaw Validatior](frontend/docs/appmodulecss_validator.PNG)
 
 All CSS code passed through the validator without any issues.
 
