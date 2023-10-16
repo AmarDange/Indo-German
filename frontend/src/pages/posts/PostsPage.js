@@ -45,7 +45,7 @@ function PostsListPage({ message, filter = "" }) {
                 setPosts(data);
                 setHasLoaded(true);
             } catch (err) {
-                console.log(err);
+                // console.log(err);
             }
         };
 
@@ -55,7 +55,7 @@ function PostsListPage({ message, filter = "" }) {
         }, 1200);
         return () => {
             clearTimeout(timer);
-        }
+        };
     }, [filter, pathname, currentUser, query]);
 
     return (
