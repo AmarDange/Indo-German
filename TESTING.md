@@ -490,52 +490,23 @@ Result is as shown here.
 
 The official W3C Markup Validator was used to validate the CSS in the project.
 
-[W3C CSS Jigsaw Validatior](frontend/docs/appcss_jigsaw_validator.PNG)
-[W3C CSS Jigsaw Validatior](frontend/docs/appmodulecss_validator.PNG)
+[W3C CSS Jigsaw Validatior](https://jigsaw.w3.org/css-validator/validator)
+
 
 All CSS code passed through the validator without any issues.
 
-![CSS Validation](documentation/validation/css-validation.png)
+![CSS Validation](frontend/docs/appcss_jigsaw_validator.PNG)
+![CSS Validation](frontend/docs/appmodulecss_validator.PNG)
 
-### JSX Validation using ESLint
-
-- ESlint was downloaded following the instructions [here](https://gist.github.com/ianmeigh/8e603b91a38d7829d959402bfcf29d3d), credit goes to Ian Meigh. Following error were shown while running.<br>
-
-![JSX Validation](documentation/validation/eslint-validation.png)
-
-1. Error: Do not pass children as props compile error for Infinite Scroll component: This was solved by removing children element and place code in tags. Detailed screenshot in Issue and Fix section in README.md.
-
-2. Error in DropdownMenu.js - component-definition-is-missing-display-name 
-	- Credit: [Quora](https://www.quora.com/Why-is-component-definition-missing-display-name-react-display-name-error-occur-JavaScript-HTML-arrays-reactjs-antd-development)
-	- Reason: ESLint thinks you are defining a new component without setting any name to it.
-
-	This is explained because ESLint cannot recognise the render prop pattern because you are not directly writing this render prop into a component, but into an object.
-
-	You can either put the render prop directly into your jsx implementation of the component, or shut down the ESLint's error by doing this :
-
-	// eslint-disable-next-line react/display-name
-
-	OR
-
-	If anyone needs to avoid this in all the files, add below to the rules section of .eslintrc.js file,
-
-	{ 
-	... 
-	"rules": { 
-		"react/display-name": "off" 
-	} 
-	} 
-
-I used last one. Add "react/display-name": "off" in .eslintrc.json file.
 
 ## Performance
 
   - Dev tool lighthouse test for Desktop
 
-  ![JSX Validation](documentation/desktop-lighthouse.png)
+  ![JSX Validation](frontend/docs/lighthouse-test-for-desktop.PNG)
 
 
 
   - Dev tool lighthouse test for Mobile
 
-  ![JSX Validation](documentation/mobile-lighthouse.png)
+  ![JSX Validation](frontend/docs/lighthouse-test-for-mobile.PNG)
